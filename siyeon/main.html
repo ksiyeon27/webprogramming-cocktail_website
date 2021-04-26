@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <script src="src/rSlider.js"></script>    
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>
+            </div>
+
+            <ul class="nav_menu">
+                <li><a href="main.html">오늘의 칵테일 검색하기</a></li>
+                <li><a href="">마이 페이지</a></li>
+                <li><a href="">전체 리스트</a></li>
+                <li><a href="">맞춤 칵테일</a></li>
+                <li><a href="">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search_title">
+        <span><img class="cock-logo" src="img/logo_crop.svg"></span>
+        검색해보세요!</div>
+    <div class="search_mainbg">
+        <div class="search_info">
+            칵테일바에 가서 메뉴판을 짠! 하고 연 순간,<br>
+            헉! 너무 많은 종류들과 잘 모르는 술 이름들, 혹시 당황스럽지 않으셨나요?<br>
+            혹은 오늘은 색다른 걸 마셔보고 싶은데 내가 원하는 거 어디 없나 고민하셨나요?<br>
+            내가 원하는 조건들을 쉽고 빠르게 콕! 콕! 고르기만 하면,<br>
+            당신을 위한 칵테일을 콕! 찾아주는 콕!테일 검색을 이용해보세요!<br>
+        </div>
+
+        <div class="select select-sugar">
+            <h1>당도</h1>
+            <div class="sugar-slider">
+                <input type="text" id="sugarSlider" />
+            </div>
+            
+            
+
+        </div>
+        <div class="select select-alcohol">
+            <h1>도수</h1>
+            <div class="alcohol-slider">
+                <input type="text" id="alcoholSlider" />
+            </div>
+            
+        </div>
+
+        <div class="select select-base">
+            <div class="title-wrapper">
+                <h1>베이스</h1>
+                <button class="all-btn1">다 괜찮아요!</button>
+            </div>
+            <br>
+
+            <ul class="base-firstline">
+                <li><div class="circle1"><img class="vodka-btn var-button" src="img/base_vodka.svg"></div><span>보드카</span></li>
+                <li><div class="circle2"><img class="gin-btn var-button" src="img/base_gin.svg"></div><span>&nbsp진</span></li>
+                <li><div class="circle3"><img class="tequila-btn var-button" src="img/base_tequila.svg"></div><span>데킬라</span></li>
+                <li><div class="circle4"><img class="rum-btn var-button" src="img/base_rum.svg"></div><span>&nbsp럼</span></li>
+            </ul>
+
+            <ul class="base-secondline">
+                <li><div class="circle5"><img class="whiskey-btn var-button" src="img/base_whiskey.svg"></div><span>위스키</span></li>
+                <li><div class="circle6"><img class="wine-btn var-button" src="img/base_wine.svg"></div><span>와인</span></li>
+                <li><div class="circle7"><img class="liqueur-btn var-button" src="img/base_liqueur.svg"></div><span>리큐르</span></li>
+                <li><div class="circle8"><img class="etc-btn var-button" src="img/base_etc.svg"></div><span>기타</span></li>
+            </ul>
+        </div>
+
+        <div class="select select-flavor">
+            <div class="title-wrapper">
+                <h1>맛</h1>
+                <button class="all-btn2">다 괜찮아요!</button>
+            </div>
+            <br>
+
+
+            <ul class="flavor-firstline">
+                <li><div class="circle9"><img class="leaf-btn" src="img/flavor_leaf.svg"></div><span>풋풋풀잎</span></li>
+                <li><div class="circle10"><img class="berry-btn" src="img/flavor_berry.svg"></div><span>베리베리</span></li>
+                <li><div class="circle11"><img class="orange-btn" src="img/flavor_orange.svg"></div><span>오렌지향</span></li>
+                <li><div class="circle12"><img class="citrus-btn" src="img/flavor_citrus.svg"></div><span>시트러스</span></li>
+            </ul>
+
+            <ul class="flavor-secondline">
+                <li><div class="circle13"><img class="choco-btn" src="img/flavor_choco.svg"></div><span>초코초코</span></li>
+                <li><div class="circle14"><img class="coffee-btn" src="img/flavor_coffee.svg"></div><span>커피커피</span></li>
+                <li><div class="circle15"><img class="creamy-btn" src="img/flavor_creamy.svg"></div><span>크리미한</span></li>
+                <li><div class="circle16"><img class="tropical-btn" src="img/flavor_tropical.svg"></div><span>트로피컬</span></li>
+            </ul>
+        </div>
+    
+        <div class="select-tags">
+            <ul class="tag-firstline">
+                <li><button>태그</button></li>
+                <li><button class="tag-btn1"># 청량한</button></li>
+                <li><button class="tag-btn2"># 깔끔한</button></li>
+                <li><button class="tag-btn3"># 쓴 맛 가득</button></li>
+                <li><button class="tag-btn4"># 트로피컬한</button></li>
+                <li><button class="tag-btn5"># 부드러운</button></li>
+            </ul>
+
+            <ul class="tag-secondline">
+                <li><button class="tag-btn6"># 상큼한</button></li>
+                <li><button class="tag-btn7"># 탄산 톡톡</button></li>
+                <li><button class="tag-btn8"># 롱 드링크</button></li>
+                <li><button class="tag-btn9"># 쇼트 드링크</button></li>
+                <li><button class="tag-btn10"># 신 맛 가득</button></li>
+                
+            </ul>
+
+            <ul class="tag-thirdline">
+                
+                <li><button class="tag-btn11"># 알콜향 가득</button></li>
+                <li><button class="tag-btn12"># 콜라 좋아</button></li>
+                <li><button class="tag-btn13"># 사이다 좋아</button></li>
+                <li><button class="tag-btn14"># 진저에일</button></li>
+                <li><button class="tag-btn15"># 쌉싸름한</button></li>
+               
+            </ul>
+        </div>
+
+
+        <div class="select-submit">
+            <a href=""><button>오늘의 칵테일은 너로 정했다! 콕!</button></a>
+        </div> 
+    </div>
+
+    <footer>
+        <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
+    </footer>
+    
+    <script>
+        var mySlider = new rSlider({
+        target: '#sugarSlider',
+        values: ["단맛제로","당도1","당도2","당도3","단맛끝판왕"],
+        range: true,
+        tooltip: true,
+        scale: true,
+        labels:false,
+        set: [] });
+
+        var mySlider2 = new rSlider({
+        target: '#alcoholSlider',
+        values: ["0도","10도","20도","30도","40도"],
+        range: true,
+        tooltip: true,
+        scale: true,
+        labels:true,
+        set: [] });
+    </script>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
+
+

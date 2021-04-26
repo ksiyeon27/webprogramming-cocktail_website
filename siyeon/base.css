@@ -1,0 +1,48 @@
+@import "src/reset.css";
+
+* {
+  font-family: "Jua";
+}
+nav {
+  background-color: white;
+  overflow: hidden;
+}
+
+nav .nav_logo {
+  float: left;
+  width: 130px;
+  margin: 20px 0;
+  padding-left: 3%;
+}
+nav .nav_menu {
+  float: right;
+  overflow: hidden;
+  height: 100px;
+  margin: 10px 0;
+  margin-right: 2%;
+}
+nav .nav_menu li {
+  float: left;
+  margin: 45px 13px;
+  list-style: none;
+}
+nav .nav_menu li a {
+  text-decoration: none;
+  color: #b1b1b1;
+  font-size: 16px;
+}
+nav .nav_menu li a:hover,
+nav .nav_menu li a:focus {
+  color: #f3553c;
+}
+footer {
+  background-color: #f3553c;
+  height: 85px;
+  border: 1px solid #f3553c;
+}
+
+footer .creators {
+  color: white;
+  font-size: 14px;
+  margin: 35px 0 35px 15px;
+}
