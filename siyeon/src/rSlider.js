@@ -134,7 +134,7 @@
 			span.appendChild(ins);
 			this.scale.appendChild(span);
 
-			span.style.width = i === iLen - 1 ? 0 : this.step + 'px';
+			span.style.width = i === iLen - 1 ? 0 : this.step -0.3 + 'px';
 
 			if (!this.conf.labels) {
 				if (i === 0 || i === iLen - 1) ins.innerHTML = this.conf.values[i]
