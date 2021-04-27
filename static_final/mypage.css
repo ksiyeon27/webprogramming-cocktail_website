@@ -285,19 +285,17 @@
   top: 40px;
   margin-bottom: 50px;
   text-align: center;
-  line-height: 180%;
+  line-height: 130%;
   overflow: hidden;
-}
-
-.button:hover {
-  background-color: #ffdad0;
-}
-
-.button a {
   text-decoration: none;
   color: #f3553c;
   font-size: 20px;
   font-weight: bold;
+  cursor:pointer;
+}
+
+.button:hover {
+  background-color: #ffdad0;
 }
 
 .cocktail-list {
