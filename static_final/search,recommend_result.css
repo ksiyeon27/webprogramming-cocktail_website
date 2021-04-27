@@ -42,7 +42,7 @@ nav .nav_menu li a:focus {
 }
 
 .line {
-  height: 105px;
+  height: 130px;
   background-color: #f3553c;
   display: flex;
   align-items: center;
@@ -61,17 +61,18 @@ nav .nav_menu li a:focus {
 }
 
 .text {
-  padding-top: 60px;
+  padding-top: 55px;
   position: relative;
   text-align: left;
 }
 .cock {
   background-color: #f3553c;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   position: relative;
   float: right;
-  margin-top: -100px;
+  margin-right:30px;
+  margin-top: -72px;
 }
 
 .cock2 {
