@@ -202,6 +202,7 @@ footer .creators {
   filter: invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%)
     contrast(87%);
 }
+
 .select-base li div:hover > img {
   filter: invert(40%) sepia(67%) saturate(1034%) hue-rotate(330deg)
     brightness(97%) contrast(97%);
@@ -278,16 +279,6 @@ footer .creators {
     brightness(97%) contrast(97%);
 }
 
-.select-flavor li div .leaf-btn,
-.citrus-btn {
-  width: 60%;
-  margin-left: 20%;
-}
-.select-flavor li div .citrus-btn {
-  width: 60%;
-  margin-top: 20px;
-  margin-left: 20%;
-}
 .select-flavor li span {
   margin-left: 25%;
 }
@@ -330,4 +321,32 @@ footer .creators {
 .select-submit button:hover,
 .select-submit button:focus {
   background-color: #ffdad0;
+}
+
+/*resized*/
+.select-base ul li div .rum-btn {
+  margin-top: 5px;
+  margin-left: 11%;
+}
+.select-flavor ul li div .leaf-btn {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 18px;
+}
+.select-flavor ul li div .citrus-btn {
+  width: 50%;
+  margin-top: 25px;
+  margin-left: 25%;
+}
+.select-base .base-secondline img,
+.select-flavor ul li div .choco-btn,
+.select-flavor ul li div .tropical-btn,
+.select-flavor ul li div .creamy-btn {
+  width: 65%;
+  margin-left: 18%;
+  margin-top: 20px;
+}
+.select-flavor ul li div .choco-btn,
+.select-flavor ul li div .creamy-btn {
+  margin-top: 13px;
 }

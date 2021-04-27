@@ -50,7 +50,9 @@ footer .creators {
   text-decoration: none;
   color: #6c757d;
 }
-.peachcrush:hover,
-.peachcrush:focus {
+.pc-btn:hover .peachcrush {
   color: white;
 }
+/* .peachcrush:hover,
+.peachcrush:focus {
+} */
