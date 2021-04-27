@@ -1,0 +1,333 @@
+@import "src/reset.css";
+@import "src/rSlider.css";
+nav {
+  background-color: white;
+  overflow: hidden;
+}
+
+nav .nav_logo {
+  float: left;
+  width: 130px;
+  margin: 20px 0;
+  padding-left: 3%;
+}
+nav .nav_menu {
+  float: right;
+  overflow: hidden;
+  height: 100px;
+  margin: 10px 0;
+  margin-right: 2%;
+}
+nav .nav_menu li {
+  float: left;
+  margin: 45px 13px;
+  list-style: none;
+}
+nav .nav_menu li a {
+  text-decoration: none;
+  color: #b1b1b1;
+  font-size: 16px;
+}
+nav .nav_menu li:first-child a {
+  text-decoration: none;
+  color: #f3553c;
+  font-size: 16px;
+}
+nav .nav_menu li a:hover,
+nav .nav_menu li a:focus {
+  color: #f3553c;
+}
+footer {
+  background-color: #f3553c;
+  height: 85px;
+  border: 1px solid #f3553c;
+}
+
+footer .creators {
+  color: white;
+  font-size: 14px;
+  margin: 35px 0 35px 15px;
+}
+
+/*main start*/
+.bg-color {
+  background-color: #ffdad0 !important;
+}
+.main-filter {
+  filter: invert(40%) sepia(67%) saturate(1034%) hue-rotate(330deg)
+    brightness(97%) contrast(97%) !important;
+}
+.main-color {
+  color: #f3553c !important;
+}
+
+* {
+  font-family: "Jua";
+}
+.search_title {
+  height: 90px;
+  background-color: #f3553c;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+.search_title .cock-logo {
+  width: 50px;
+}
+.search_mainbg {
+  background-image: url(img/main_background.jpg);
+  background-size: 100%;
+  background-position-y: -250px;
+}
+
+.search_info {
+  text-align: center;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: -1px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-bottom: 30px;
+}
+
+.select {
+  border-radius: 10px;
+  width: 50%;
+  margin: 30px 25%;
+  padding: 10px;
+  background-color: rgba(255, 218, 208, 0.5);
+  color: white;
+}
+
+.select h1 {
+  font-size: 36px;
+  margin-left: 30px;
+}
+/*sugar*/
+.select-sugar {
+  height: 150px;
+  overflow: hidden;
+}
+.select-sugar h1 {
+  margin-top: 20px;
+  float: left;
+}
+.select-sugar .sugar-slider {
+  margin-left: 5%;
+  margin-top: 30px;
+  width: 90%;
+  box-sizing: border-box;
+  float: left;
+}
+.select-sugar div input {
+  width: 100%;
+}
+/*alcohol*/
+.select-alcohol {
+  height: 150px;
+  overflow: hidden;
+}
+.select-alcohol h1 {
+  margin-top: 20px;
+  float: left;
+}
+.select-alcohol .alcohol-slider {
+  margin-left: 5%;
+  margin-top: 30px;
+  width: 90%;
+  box-sizing: border-box;
+  float: left;
+}
+.select-alcohol div input {
+  width: 100%;
+}
+
+/*base*/
+.title-wrapper {
+  overflow: hidden;
+}
+.select-base h1 {
+  margin-top: 20px;
+  float: left;
+}
+.select-base button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  float: right;
+  padding: 5px 15px;
+  margin-top: 10px;
+  margin-right: 5%;
+  font-size: 24px;
+  border: none;
+  box-shadow: 5px 5px 10px rgb(141, 128, 128);
+}
+.select-base button:hover {
+  background-color: #ffdad0;
+  color: #f3553c;
+}
+.select-base ul {
+  overflow: hidden;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+.select-base li {
+  float: left;
+  width: 15%;
+  margin-right: 10%;
+}
+.select-base li div {
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 5px rgb(58, 47, 47);
+}
+.select-base li div:hover,
+.select-base li div:focus {
+  border: 1px solid #ffdad0;
+  background-color: #ffdad0;
+}
+.select-base li div img {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+  filter: invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%)
+    contrast(87%);
+}
+.select-base li div:hover > img {
+  filter: invert(40%) sepia(67%) saturate(1034%) hue-rotate(330deg)
+    brightness(97%) contrast(97%);
+}
+.select-base li div:focus > img {
+  filter: invert(40%) sepia(67%) saturate(1034%) hue-rotate(330deg)
+    brightness(97%) contrast(97%);
+}
+
+.select-base li span {
+  margin-left: 35%;
+}
+/*flavor*/
+.select-flavor h1 {
+  margin-top: 20px;
+  float: left;
+}
+.select-flavor button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  float: right;
+  padding: 5px 15px;
+  margin-top: 10px;
+  margin-right: 5%;
+  font-size: 24px;
+  border: none;
+  box-shadow: 5px 5px 10px rgb(141, 128, 128);
+}
+.select-flavor button:hover {
+  background-color: #ffdad0;
+  color: #f3553c;
+}
+.select-flavor ul {
+  overflow: hidden;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+.select-flavor li {
+  float: left;
+  width: 15%;
+  margin-right: 10%;
+}
+.select-flavor li div {
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 5px rgb(58, 47, 47);
+}
+.select-flavor li div:hover,
+.select-flavor li div:focus {
+  border: 1px solid #ffdad0;
+  background-color: #ffdad0;
+}
+.select-flavor li div img {
+  width: 75%;
+  margin-left: 13%;
+  margin-top: 10px;
+  filter: invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%)
+    contrast(87%);
+}
+.select-flavor li div:hover > img {
+  filter: invert(40%) sepia(67%) saturate(1034%) hue-rotate(330deg)
+    brightness(97%) contrast(97%);
+}
+.select-flavor li div:focus > img {
+  filter: invert(40%) sepia(67%) saturate(1034%) hue-rotate(330deg)
+    brightness(97%) contrast(97%);
+}
+
+.select-flavor li div .leaf-btn,
+.citrus-btn {
+  width: 60%;
+  margin-left: 20%;
+}
+.select-flavor li div .citrus-btn {
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 20%;
+}
+.select-flavor li span {
+  margin-left: 25%;
+}
+
+/* tag  */
+.select-tags {
+  width: 60%;
+  margin: 80px 20%;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+
+.select-tags li button {
+  padding: 5px 15px;
+  border-radius: 40px;
+  background-color: white;
+  float: left;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  height: 50px;
+  box-shadow: 2px 2px 5px rgb(99, 95, 95);
+}
+.select-tags li button:hover {
+  background-color: #ffdad0;
+  color: #f3553c;
+}
+.select-submit button {
+  margin: 10px 35%;
+  width: 30%;
+  font-size: 26px;
+  padding: 25px 10px;
+  border-radius: 50px;
+  margin-bottom: 100px;
+  background-color: white;
+  color: #f3553c;
+  border: none;
+}
+.select-submit button:hover,
+.select-submit button:focus {
+  background-color: #ffdad0;
+}
