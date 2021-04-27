@@ -214,27 +214,45 @@ margin-left:5%;
 }
 
 .tequila{
-  background-image:url("img/base_tequila.svg");
-  width:25px;
+  width:30px;
   height:30px;
   position: absolute;
   top:55%;
   left:22%;
-  background-color:#DEB778;
-  border-radius:15px;
-  box-shadow: 2px 2px 10px #B1B1B1;
+  border-radius:50%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px #B1B1B1;
+display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tequila img{
+   padding: 0 0 0 0;
+    width:30px;
+    height:30px;
+    filter: invert(76%) sepia(51%) saturate(302%) hue-rotate(356deg) brightness(89%) contrast(96%);
 }
 
 .tropical{
-  background-image:url("img/flavor_tropical.svg");
-  width:25px;
+  width:30px;
   height:30px;
   position: absolute;
   top:80%;
   left:22%;
-  background-color: #DE7878;
-  border-radius:15px;
-  box-shadow: 2px 2px 10px #B1B1B1;
+  border-radius:50%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px #B1B1B1;
+display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tropical img{
+   padding: 0 0 0 0;
+    width:30px;
+    height:30px;
+    filter: invert(86%) sepia(37%) saturate(6635%) hue-rotate(312deg) brightness(99%) contrast(77%);
 }
 
 .recipe{
