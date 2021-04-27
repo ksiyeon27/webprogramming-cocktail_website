@@ -46,3 +46,11 @@ footer .creators {
   font-size: 14px;
   margin: 35px 0 35px 15px;
 }
+.peachcrush {
+  text-decoration: none;
+  color: #6c757d;
+}
+.peachcrush:hover,
+.peachcrush:focus {
+  color: white;
+}
