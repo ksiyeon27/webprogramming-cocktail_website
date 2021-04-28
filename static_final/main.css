@@ -317,6 +317,7 @@ footer .creators {
   background-color: white;
   color: #f3553c;
   border: none;
+  cursor: pointer;
 }
 .select-submit button:hover,
 .select-submit button:focus {
