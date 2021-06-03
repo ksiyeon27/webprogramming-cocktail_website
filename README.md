@@ -20,4 +20,3 @@ Deployment instructions
 
 ...
 
-git 실험
