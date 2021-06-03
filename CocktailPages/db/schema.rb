@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20210603161441) do
     t.text     "recipe"
     t.string   "base"
     t.string   "flavor"
-    t.text     "tags"
+    t.string   "tags"
     t.text     "information"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

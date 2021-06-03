@@ -1,0 +1,285 @@
+Started GET "/" for 210.123.100.154 at 2021-06-03 18:53:59 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.5ms)
+Started GET "/" for 210.123.100.154 at 2021-06-03 18:54:01 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.0ms)
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCocktails (20210603161441)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "cocktails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "alcohol" float, "sugar" integer, "recipe" text, "base" varchar, "flavor" varchar, "tags" varchar, "information" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210603161441"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-03 18:57:36.909265"], ["updated_at", "2021-06-03 18:57:36.909265"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 210.123.100.154 at 2021-06-03 18:57:44 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 924ms (Views: 917.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-03 18:58:38 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails/search" for 210.123.100.154 at 2021-06-03 18:58:40 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-03 18:58:40 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cocktails/new" for 210.123.100.154 at 2021-06-03 18:58:41 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 72ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails/new" for 210.123.100.154 at 2021-06-03 18:58:54 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cocktails" for 210.123.100.154 at 2021-06-03 18:59:45 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+XIqRFlje9/nAVrtPMULayKsJhS+aFywdHm0mEHtAPS9yDEz8xQzQLNzZOJnpv8YhCE+SO0MzZSm4S+Xy7lA==", "cocktail"=>{"name"=>"아메리카노", "alcohol"=>"12.2", "sugar"=>"1", "recipe"=>"- 캄파리 30ml\r\n- 스위트 베르무트 30ml\r\n- 탄산수 적당량 (fill up)", "base"=>"리", "flavor"=>"", "tags"=>"", "information"=>""}, "commit"=>"Save Cocktail"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "아메리카노"], ["alcohol", 12.2], ["sugar", 1], ["recipe", "- 캄파리 30ml\r\n- 스위트 베르무트 30ml\r\n- 탄산수 적당량 (fill up)"], ["base", "리"], ["flavor", ""], ["tags", ""], ["information", ""], ["created_at", "2021-06-03 18:59:45.768054"], ["updated_at", "2021-06-03 18:59:45.768054"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ba1389b8852744829207142d44e9a958.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails/1
+Completed 302 Found in 14ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/cocktails/1" for 210.123.100.154 at 2021-06-03 18:59:45 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (1.4ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-03 18:59:49 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/1" for 210.123.100.154 at 2021-06-03 18:59:55 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cocktails/new" for 210.123.100.154 at 2021-06-03 19:00:00 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cocktails" for 210.123.100.154 at 2021-06-03 19:00:40 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SouiVnrXiKB57FzBTdoMiSyrHHAKDxfag96FYKQNxWUKP+n3za0v1PAZG+KtL7q2a5F0oY/KIZORk6zpFPVgIQ==", "cocktail"=>{"name"=>"엘 디아블로", "alcohol"=>"13.5", "sugar"=>"3", "recipe"=>"- 데킬라 45ml\r\n- 크렘 드 카시스(카시스 리큐르) 15ml \r\n- 라임즙 15ml\r\n- 진저비어/진저에일 적당량 (fill up)", "base"=>"데킬라", "flavor"=>"시트러스 쌉쌀풀잎", "tags"=>"청량한 롱드링크 쌉싸름한", "information"=>"'El Diablo'는 스페인어로 '악마'를 뜻하는 단어인데요. 이러한 이름의 유래는 정확히 알려져 있지 않지만, 엘 디아블로 칵테일의 붉은 색 때문이 아닐까 많이들 생각한답니다. \r\n\r\n크렘 드 카시스*의 달콤함과 톡 쏘는 생강과 라임의 청량하고 상쾌한 맛이 같이 어우러져 가볍게 즐길 수 있는 데킬라 베이스의 칵테일이에요. 데킬라를 좋아하신다면 한 번 시도해보시길 추천해요!\r\n\r\n* 크렘 드 카시스 = 블랙커런트라는 베리류의 일종으로 만든 진하고 달콤한 술이에요. 우리나라로 치면 복분자주와 비슷한 느낌이랍니다!"}, "commit"=>"Save Cocktail"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "엘 디아블로"], ["alcohol", 13.5], ["sugar", 3], ["recipe", "- 데킬라 45ml\r\n- 크렘 드 카시스(카시스 리큐르) 15ml \r\n- 라임즙 15ml\r\n- 진저비어/진저에일 적당량 (fill up)"], ["base", "데킬라"], ["flavor", "시트러스 쌉쌀풀잎"], ["tags", "청량한 롱드링크 쌉싸름한"], ["information", "'El Diablo'는 스페인어로 '악마'를 뜻하는 단어인데요. 이러한 이름의 유래는 정확히 알려져 있지 않지만, 엘 디아블로 칵테일의 붉은 색 때문이 아닐까 많이들 생각한답니다. \r\n\r\n크렘 드 카시스*의 달콤함과 톡 쏘는 생강과 라임의 청량하고 상쾌한 맛이 같이 어우러져 가볍게 즐길 수 있는 데킬라 베이스의 칵테일이에요. 데킬라를 좋아하신다면 한 번 시도해보시길 추천해요!\r\n\r\n* 크렘 드 카시스 = 블랙커런트라는 베리류의 일종으로 만든 진하고 달콤한 술이에요. 우리나라로 치면 복분자주와 비슷한 느낌이랍니다!"], ["created_at", "2021-06-03 19:00:40.653130"], ["updated_at", "2021-06-03 19:00:40.653130"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ba1389b8852744829207142d44e9a958.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails/2
+Completed 302 Found in 13ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/cocktails/2" for 210.123.100.154 at 2021-06-03 19:00:40 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-03 19:00:43 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/1" for 210.123.100.154 at 2021-06-03 19:00:44 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cocktails/new" for 210.123.100.154 at 2021-06-03 19:00:47 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-03 19:00:48 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/search" for 210.123.100.154 at 2021-06-03 19:00:49 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
