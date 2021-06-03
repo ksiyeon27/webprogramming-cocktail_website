@@ -1,0 +1,35 @@
+<h1>Show cocktail</h1>
+
+<p>
+ <strong>이름:</strong>
+ <%= @cocktail.name %>
+</p>
+<p>
+ <strong>도수: </strong>
+ <%= @cocktail.alcohol %>
+</p>
+ <strong>레시피:</strong>
+ <%= @cocktail.recipe %>
+</p>
+<p>
+ <strong>베이스:</strong>
+ <%= @cocktail.base %>
+</p>
+ <strong>맛:</strong>
+ <%= @cocktail.flavor %>
+</p>
+<p>
+ <strong>태그:</strong>
+ <%= @cocktail.tags %>
+</p>
+ <strong>기타소개정보:</strong>
+ <%= @cocktail.information %>
+</p>
+<p>
+ <strong>당도:</strong>
+ <%= @cocktail.sugar %>
+</p>
+
+<%= link_to '칵테일 리스트', cocktails_path %>
+<%= link_to '새 칵테일', new_cocktail_path %>
+<%= link_to '칵테일 검색', cocktails_search_path %>

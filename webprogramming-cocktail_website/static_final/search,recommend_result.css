@@ -1,0 +1,266 @@
+@import "reset.css";
+
+* {
+  font-family: "Jua";
+}
+nav {
+  background-color: white;
+  overflow: hidden;
+}
+
+nav .nav_logo {
+  float: left;
+  width: 130px;
+  margin: 20px 0;
+  padding-left: 3%;
+}
+nav .nav_menu {
+  float: right;
+  overflow: hidden;
+  height: 100px;
+  margin: 10px 0;
+  margin-right: 2%;
+}
+nav .nav_menu li {
+  float: left;
+  margin: 45px 13px;
+  list-style: none;
+}
+nav .nav_menu li a {
+  text-decoration: none;
+  color: #b1b1b1;
+  font-size: 16px;
+}
+nav .nav_menu li a:hover,
+nav .nav_menu li a:focus {
+  color: #f3553c;
+}
+
+.main {
+  height: 585px;
+  position: relative;
+}
+
+.line {
+  height: 130px;
+  background-color: #f3553c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.cock1 {
+  background-color: #f3553c;
+  width: 500px;
+  height: 100px;
+  font-size: 40px;
+  color: white;
+  padding: 0px;
+}
+
+.text {
+  padding-top: 55px;
+  position: relative;
+  text-align: left;
+}
+.cock {
+  background-color: #f3553c;
+  width: 65px;
+  height: 65px;
+  position: relative;
+  float: right;
+  margin-right:30px;
+  margin-top: -72px;
+}
+
+.cock2 {
+  background-color: #f3553c;
+  width: 430px;
+  height: 100px;
+  font-size: 40px;
+  color: white;
+  padding: 0px;
+}
+
+.top {
+  width: 100%;
+  height: 30px;
+  margin: 0%;
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  color: #f3553c;
+}
+
+.section {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 29.3%;
+  height: 395px;
+  position: relative;
+  float: left;
+}
+
+.photo {
+  width: 100%;
+  height: 240px;
+  align-items: center;
+  text-align: center;
+}
+
+#photo1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("img/200_1.jpg");
+  box-shadow: 5px 5px 10px #b1b1b1;
+  border-radius: 50px;
+}
+
+#photo2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("img/200_2.jpg");
+  box-shadow: 5px 5px 10px #b1b1b1;
+  border-radius: 50px;
+}
+
+#photo3 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("img/200_3.jpg");
+  box-shadow: 5px 5px 10px #b1b1b1;
+  border-radius: 50px;
+}
+
+.name {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  color: #101010;
+}
+
+.tag {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 5px;
+  align-items: center;
+  text-align: center;
+  color: #101010;
+  font-size: 16px;
+}
+
+.tag1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  border: 0px;
+  box-shadow: 2px 2px 10px #b1b1b1;
+}
+
+.tag2 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 2px solid #101010;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  border: 0px;
+  box-shadow: 2px 2px 10px #b1b1b1;
+}
+
+.tag3 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 2px solid #101010;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  border: 0px;
+  box-shadow: 2px 2px 10px #b1b1b1;
+}
+
+.bottom {
+  width: 100%;
+  height: 85px;
+  padding: 0%;
+  margin: 0%;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  color: #f3553c;
+  box-shadow: 2px 2px 10px #b1b1b1;
+  font-size: 20px;
+  border-radius: 50px;
+  font-family: "Jua";
+  align-items: center;
+  text-align: center;
+}
+
+.button:focus {
+  width: 160px;
+  height: 40px;
+  background-color: #ffdad0;
+  border: none;
+  color: #f3553c;
+  box-shadow: 2px 2px 10px #b1b1b1;
+  font-size: 20px;
+  border-radius: 50px;
+  font-family: "Jua";
+}
+
+.button:hover {
+  background-color: #ffdad0;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #b1b1b1;
+}
+
+footer {
+  background-color: #f3553c;
+  height: 85px;
+  border: 1px solid #f3553c;
+}
+
+footer .creators {
+  color: white;
+  font-size: 14px;
+  margin: 35px 0 35px 15px;
+}
