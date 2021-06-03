@@ -1,0 +1,33 @@
+<h1>Listing cocktails</h1>
+<%= link_to '새 칵테일', new_cocktail_path %>
+<%= link_to '칵테일 검색', cocktails_search_path %>
+
+<table>
+    
+ <tr>
+     <th>이름</th>
+     <th>도수</th>
+     <!--<th>레시피</th>-->
+     <th>베이스</th>
+     
+     <th>맛</th>
+     <th>태그</th>
+     <!--<th>기타소개정보</th>-->
+     <th>당도</th>
+
+ </tr>
+ 
+ <% @cocktails.each do |cocktail| %>
+ <tr>
+     <td><%= link_to cocktail.name, cocktail_path(cocktail) %></td>
+     <td><%= cocktail.alcohol %></td>
+     <!--<td><%= cocktail.recipe %></td>-->
+     <td><%= cocktail.base %></td>
+     <td><%= cocktail.flavor %></td>
+     <td><%= cocktail.tags %></td>
+     <!--<td><%= cocktail.information %></td>-->
+     <td><%= cocktail.sugar %></td>
+ </tr>
+ <% end %>
+ 
+</table>
