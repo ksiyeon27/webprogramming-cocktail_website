@@ -283,3 +283,1500 @@ Processing by CocktailsController#search as HTML
 Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 121.162.59.12 at 2021-06-05 13:43:57 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 239ms (Views: 232.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 121.162.59.12 at 2021-06-05 13:43:59 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 121.162.59.12 at 2021-06-05 13:44:03 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cocktails/new" for 121.162.59.12 at 2021-06-05 13:44:06 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 121.162.59.12 at 2021-06-05 13:44:11 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails/1" for 121.162.59.12 at 2021-06-05 13:44:16 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails/2" for 121.162.59.12 at 2021-06-05 13:44:19 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/1" for 121.162.59.12 at 2021-06-05 13:44:22 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/2" for 121.162.59.12 at 2021-06-05 13:44:29 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/search" for 121.162.59.12 at 2021-06-05 13:44:33 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails/new" for 121.162.59.12 at 2021-06-05 17:35:41 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails/search" for 121.162.59.12 at 2021-06-05 17:35:45 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 121.162.59.12 at 2021-06-05 17:35:50 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (2.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/cocktails/1" for 121.162.59.12 at 2021-06-05 17:35:58 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cocktails/search" for 121.162.59.12 at 2021-06-05 18:03:50 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails/new" for 121.162.59.12 at 2021-06-05 18:03:56 +0000
+Cannot render console from 121.162.59.12! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20210606025717)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "cocktails_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_cocktails_id" ON "comments" ("cocktails_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210606025717"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+Started GET "/" for 1.102.14.103 at 2021-06-06 03:10:26 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 262ms (Views: 252.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 1.102.14.103 at 2021-06-06 03:10:28 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 1.102.14.103 at 2021-06-06 03:10:31 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.8ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 71ms (Views: 44.9ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:10:32 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cocktails/new" for 1.102.14.103 at 2021-06-06 03:12:39 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#new as HTML
+  Rendering cocktails/new.html.erb within layouts/application
+  Rendered cocktails/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 1.102.14.103 at 2021-06-06 03:29:27 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 271ms (Views: 266.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:29:29 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (28.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894026766580'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.4ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:32:07 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktails, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894033474400'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.5ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:35:31 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (33.6ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktails, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69893916766420'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.8ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:35:42 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69893916316720'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.8ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:35:56 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69893983239400'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:36:43 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktails, @cocktails.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894050166200'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:37:02 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894026207360'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.6ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:40:35 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894024276340'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:40:41 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894033074720'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.9ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:40:46 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69893916542120'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:45:08 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@comment, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69893982826380'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:47:15 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@comment, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894050796920'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:54:26 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894083969720'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:58:06 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894049819000'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.9ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:58:15 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69893915489560'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.4ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 03:58:18 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894027701380'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 04:00:22 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered cocktails/show.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (unknown attribute 'cocktail_id' for Comment.):
+    35: <%= link_to '칵테일 검색', cocktails_search_path %>
+    36: 
+    37: <h2>리뷰를 남겨주세요</h2>
+    38: <%=form_for([@cocktail, @cocktail.comments.build]) do |f| %>
+    39:  <p>
+    40:   <%= f.label :commenter%><br>
+    41:   <%= f.text_field :commenter%>
+  
+app/views/cocktails/show.html.erb:38:in `_app_views_cocktails_show_html_erb___2526170466422069362_69894083408340'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Comments (20210606041004)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210606041004"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktails_id' AND type='index'
+[0m
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 04:31:13 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20210606043043)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "cocktail_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 04:31:36 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.2ms)
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 04:31:41 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.2) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.2) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20210606043043)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "cocktail_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DropComments (20210606043553)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.3ms)[0m  [1m[35mDROP TABLE "comments"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210606043553"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20210606044248)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "cocktail_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_cocktail_id" ON "comments" ("cocktail_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210606044248"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+[0m
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 04:43:53 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered cocktails/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 64ms (Views: 50.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/cocktails/1/comments" for 1.102.14.103 at 2021-06-06 04:44:37 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uBf3BRXQCc/vRKTAn0dhUsmduc0bxGUbCD75Qn/3NxkBQegD7q/pVwBXk9/LLauGHVbNjg6hddfeMwMYmOh/sQ==", "comment"=>{"commenter"=>"hi", "body"=>"hi"}, "commit"=>"Create Comment", "cocktail_id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "cocktail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "hi"], ["body", "hi"], ["cocktail_id", 1], ["created_at", "2021-06-06 04:44:37.598411"], ["updated_at", "2021-06-06 04:44:37.598411"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79444326856a4bd3bbc56b56682dcc1e.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails.1
+Completed 302 Found in 15ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/cocktails.1" for 1.102.14.103 at 2021-06-06 04:44:37 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as 
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails/1" for 1.102.14.103 at 2021-06-06 04:44:46 +0000
+Cannot render console from 1.102.14.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered cocktails/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 221.152.243.240 at 2021-06-06 07:28:52 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 382ms (Views: 374.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 221.152.243.240 at 2021-06-06 07:28:53 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 221.152.243.240 at 2021-06-06 07:28:55 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 46ms (Views: 34.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 07:28:56 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered cocktails/show.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 94ms (Views: 87.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/cocktails/1/comments" for 221.152.243.240 at 2021-06-06 07:29:06 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tAM8oMSDNxCIMurrZnFk1x4ecSVYYMtKiBkYF10isGPLA+Ey3kvWkd8cYDKlr2zZXWyB1Ox/6p7qsMpI7OyP7A==", "comment"=>{"commenter"=>"댓글2", "body"=>"댓글2"}, "commit"=>"Create Comment", "cocktail_id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "cocktail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "댓글2"], ["body", "댓글2"], ["cocktail_id", 1], ["created_at", "2021-06-06 07:29:06.152807"], ["updated_at", "2021-06-06 07:29:06.152807"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79444326856a4bd3bbc56b56682dcc1e.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails.1
+Completed 302 Found in 15ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/cocktails.1" for 221.152.243.240 at 2021-06-06 07:29:06 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as 
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cocktails.1" for 221.152.243.240 at 2021-06-06 07:33:40 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as 
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 41ms (Views: 36.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 07:33:41 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered cocktails/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/cocktails/1/comments" for 221.152.243.240 at 2021-06-06 07:33:49 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NpcqQWJJWFGA6cz2U9O/U7eb6WALRDwA/by77zHqXihJl/fTeIG50NfHRi+QDbdd9OkZkb9bHdSfFWmwgCRhpw==", "comment"=>{"commenter"=>"댓글3", "body"=>"댓글3"}, "commit"=>"Create Comment", "cocktail_id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "cocktail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "댓글3"], ["body", "댓글3"], ["cocktail_id", 1], ["created_at", "2021-06-06 07:33:49.187101"], ["updated_at", "2021-06-06 07:33:49.187101"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79444326856a4bd3bbc56b56682dcc1e.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails/1
+Completed 302 Found in 13ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 07:33:49 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered cocktails/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 221.152.243.240 at 2021-06-06 11:19:23 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 299ms (Views: 291.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 221.152.243.240 at 2021-06-06 11:19:25 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 221.152.243.240 at 2021-06-06 11:19:27 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 35.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:19:28 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered cocktails/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 82ms (Views: 73.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:32:49 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (3.1ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (0.4ms)
+  Rendered cocktails/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cocktails/1/comments" for 221.152.243.240 at 2021-06-06 11:32:58 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9p81oi71Nb7VSq4SIhh9AzUjnrQwy6cJ0TbS+uU82jsQ0Iqv9GX9VgQiIifTJ48Bdwh0KKO9bUYBe06wQ2Eb7Q==", "comment"=>{"commenter"=>"댓글4", "body"=>"댓글4"}, "commit"=>"Create Comment", "cocktail_id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "cocktail_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "댓글4"], ["body", "댓글4"], ["cocktail_id", 1], ["created_at", "2021-06-06 11:32:58.065621"], ["updated_at", "2021-06-06 11:32:58.065621"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79444326856a4bd3bbc56b56682dcc1e.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails/1
+Completed 302 Found in 15ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:32:58 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (3.9ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [5 times] (0.3ms)
+  Rendered cocktails/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:41:09 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:5: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...has_many :comments, dependent :destroy
+...                              ^):
+  
+app/models/cocktail.rb:5: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/cocktails_controller.rb:24:in `show'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.9ms)
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:41:43 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:5: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...has_many :comments, dependent :destroy,
+...                              ^):
+  
+app/models/cocktail.rb:5: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/cocktails_controller.rb:24:in `show'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:43:29 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+...   has_many :comments dependent :destroy,
+...                      ^~~~~~~~~
+/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    validates :name,
+              ^
+/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:7: Can't assign to true
+	 	 	 presence: true,
+	 	 	           ^~~~):
+  
+app/models/cocktail.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/cocktail.rb:7: Can't assign to true
+app/controllers/cocktails_controller.rb:24:in `show'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.3ms)
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:43:48 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    validates :name,
+              ^
+/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:7: Can't assign to true
+	 	 	 presence: true,
+	 	 	           ^~~~):
+  
+app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/cocktail.rb:7: Can't assign to true
+app/controllers/cocktails_controller.rb:24:in `show'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:43:49 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    validates :name,
+              ^
+/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:7: Can't assign to true
+	 	 	 presence: true,
+	 	 	           ^~~~):
+  
+app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/cocktail.rb:7: Can't assign to true
+app/controllers/cocktails_controller.rb:24:in `show'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:43:49 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    validates :name,
+              ^
+/home/ec2-user/environment/CocktailPages/app/models/cocktail.rb:7: Can't assign to true
+	 	 	 presence: true,
+	 	 	           ^~~~):
+  
+app/models/cocktail.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/cocktail.rb:7: Can't assign to true
+app/controllers/cocktails_controller.rb:24:in `show'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.7ms)
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:44:12 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (8.6ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [5 times] (0.9ms)
+  Rendered cocktails/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 53ms (Views: 40.9ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/cocktails/1/comments/1" for 221.152.243.240 at 2021-06-06 11:44:17 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+/9EqB7k//3nlOaP2wb2etNsWDb99EkfBbtFwlNrfpsdsPulxHQ3FTb8aroqOQR4kUeyqm6Cg1DV9tmI9Ta/TQ==", "cocktail_id"=>"1", "id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["cocktail_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79444326856a4bd3bbc56b56682dcc1e.vfs.cloud9.ap-northeast-1.amazonaws.com/cocktails/1
+Completed 302 Found in 13ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:44:17 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (0.8ms)
+  Rendered cocktails/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:44:39 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (2.9ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (0.9ms)
+  Rendered cocktails/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:44:41 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (1.0ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (0.8ms)
+  Rendered cocktails/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cocktails/1" for 221.152.243.240 at 2021-06-06 11:45:01 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (1.0ms)
+  Rendered cocktails/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/cocktails/1/comments" for 221.152.243.240 at 2021-06-06 11:45:11 +0000
+Cannot render console from 221.152.243.240! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [DELETE] "/cocktails/1/comments"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [18 times] (4.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.1ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.9ms)
