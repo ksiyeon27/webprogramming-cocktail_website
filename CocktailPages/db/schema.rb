@@ -10,19 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210606161740) do
+ActiveRecord::Schema.define(version: 20210610144800) do
 
   create_table "cocktails", force: :cascade do |t|
     t.string   "name"
     t.float    "alcohol"
     t.integer  "sugar"
     t.text     "recipe"
-    t.string   "base"
-    t.string   "flavor"
-    t.string   "tags"
+    t.         "base"
+    t.         "flavor"
+    t.         "tags"
     t.text     "information"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "image"
   end
 
   create_table "comments", force: :cascade do |t|

@@ -1,7 +1,7 @@
 class Cocktail < ApplicationRecord
-    # serialize :tags, Array
-    # serialize :flavor, Array
-    # serialize :base, Array
+    serialize :tags, Array
+    serialize :flavor, Array
+    serialize :base, Array
     has_many :comments, dependent: :destroy
     validates :name,
 	 	 	 presence: true,

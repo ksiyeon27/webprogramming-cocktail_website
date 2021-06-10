@@ -1,4 +1,14 @@
 {
+    "build": {
+        "@saveall": true
+    },
+    "extensions": {
+        "@aws.profile": "profile:default",
+        "@git.autofetch": true
+    },
+    "instance": {
+        "@automaticShutdown": "30"
+    },
     "language": {
         "tern_defs": {
             "json()": {

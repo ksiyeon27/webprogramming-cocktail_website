@@ -4,6 +4,12 @@
  <strong>이름:</strong>
  <%= @cocktail.name %>
 </p>
+
+<p>
+ <strong>이름:</strong>
+ <img src = "/<%= @cocktail.image %>"></img>
+</p>
+
 <p>
  <strong>도수: </strong>
  <%= @cocktail.alcohol %>
@@ -14,6 +20,7 @@
 <p>
  <strong>베이스:</strong>
  <%= @cocktail.base %>
+
 </p>
  <strong>맛:</strong>
  <%= @cocktail.flavor %>
