@@ -4444,3 +4444,85 @@ Processing by CocktailsController#show as HTML
 Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.4ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeAlcoholToCocktail (20210610163526)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acocktails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "alcohol" float, "sugar" integer, "recipe" text, "base" , "flavor" , "tags" , "information" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "acocktails" ("id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image")
+                     SELECT "id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image" FROM "cocktails"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mDROP TABLE "cocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "cocktails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "alcohol" column, "sugar" integer, "recipe" text, "base" , "flavor" , "tags" , "information" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "cocktails" ("id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image")
+                     SELECT "id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image" FROM "acocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acocktails"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210610163526"]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to ChangeSugarToCocktail (20210610164856)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acocktails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "alcohol" , "sugar" integer, "recipe" text, "base" , "flavor" , "tags" , "information" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "acocktails" ("id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image")
+                     SELECT "id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image" FROM "cocktails"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "cocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "cocktails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "alcohol" , "sugar" column, "recipe" text, "base" , "flavor" , "tags" , "information" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "image" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "cocktails" ("id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image")
+                     SELECT "id","name","alcohol","sugar","recipe","base","flavor","tags","information","created_at","updated_at","image" FROM "acocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acocktails"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210610164856"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
