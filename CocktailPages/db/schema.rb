@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20210610073243) do
-
+ActiveRecord::Schema.define(version: 20210610164856) do
 
   create_table "cocktails", force: :cascade do |t|
     t.string   "name"
@@ -23,15 +21,13 @@ ActiveRecord::Schema.define(version: 20210610073243) do
     t.         "flavor"
     t.         "tags"
     t.text     "information"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
     t.string   "image"
-
     t.integer  "cached_votes_total", default: 0
     t.integer  "cached_votes_score", default: 0
     t.integer  "cached_votes_up",    default: 0
     t.integer  "cached_votes_down",  default: 0
-
   end
 
   create_table "comments", force: :cascade do |t|
