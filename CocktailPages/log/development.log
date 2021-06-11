@@ -7816,3 +7816,58 @@ Processing by CocktailsController#show as HTML
 Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/" for 210.123.100.154 at 2021-06-11 07:15:27 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 308ms (Views: 283.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-11 07:15:30 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 86ms (Views: 79.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cocktails/1" for 210.123.100.154 at 2021-06-11 07:15:31 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Cocktail"], ["vote_flag", "t"]]
+  Rendered comments/_form.html.erb (42.8ms)
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (1.0ms)
+  Rendered cocktails/show.html.erb within layouts/application (84.2ms)
+Completed 200 OK in 127ms (Views: 118.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cocktails/1" for 210.123.100.154 at 2021-06-11 07:15:39 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Cocktail"], ["vote_flag", "t"]]
+  Rendered comments/_form.html.erb (3.3ms)
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 1]]
+  Rendered collection of comments/_comment.html.erb [4 times] (1.3ms)
+  Rendered cocktails/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 92ms (Views: 83.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cocktails" for 210.123.100.154 at 2021-06-11 07:16:10 +0000
+Cannot render console from 210.123.100.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
