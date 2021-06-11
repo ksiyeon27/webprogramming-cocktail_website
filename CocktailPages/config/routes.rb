@@ -9,5 +9,8 @@ Rails.application.routes.draw do
     root 'cocktails#search'
     resources :cocktails do
       resources :comments
-    end
+      member do
+        put "like" => "cocktails#like"
+      end
+  end
 end
