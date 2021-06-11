@@ -1,3 +1,4 @@
+require 'rails_autolink'
 class CocktailsController < ApplicationController
     
     respond_to :js, :html, :json

@@ -32,7 +32,7 @@
  <%= @cocktail.alcohol[1] %>단계
 </p>
  <strong>레시피:</strong>
- <%= @cocktail.recipe %>
+  <%= auto_link(safe_join(@cocktail.recipe.split("\n"), tag(:br))) %> 
 </p>
 <p>
  <strong>베이스:</strong>
