@@ -9110,3 +9110,60 @@ Migrating to AddCachedLikesToCocktails (20210610073243)
             WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
 [0m
   [1m[36mCocktail Load (1.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[36mCocktail Load (1.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "세번째 칵테일"], ["created_at", "2021-06-11 07:27:01.753107"], ["updated_at", "2021-06-11 07:27:01.753107"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[36mCocktail Load (1.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "cocktails" SET "alcohol" = ?, "updated_at" = ? WHERE "cocktails"."id" = ?[0m  [["alcohol", "---\n- 3\n- 4\n"], ["updated_at", "2021-06-11 07:28:11.109533"], ["id", 4]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+[0m
