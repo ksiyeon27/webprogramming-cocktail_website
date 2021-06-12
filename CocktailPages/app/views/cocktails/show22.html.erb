@@ -1,0 +1,136 @@
+
+
+<h1>Show cocktail</h1>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link type="text/css" rel="stylesheet" href="cocktail_detail.css" />-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>
+            </div>
+
+            <ul class="nav_menu">
+                <li><%= link_to '오늘의 칵테일 검색하기', cocktails_search_path %></li>
+                <li><a href="mypage.html">마이 페이지</a></li>
+                <li><%= link_to '전체 리스트', cocktails_path %></li>
+                <li><a href="recommend_result.html">맞춤 칵테일</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class = "main">
+      <div class = "line"></div>
+      <div class = "cocktail">
+        <div class = "floor2">
+         
+         
+          <div class = "left">
+            <div class = "name"><%= @cocktail.name %></div>
+            <div class = "photo"><img src = "/<%= @cocktail.image %>"></img></div>
+            <div class = "like">
+              
+              <div class = "heart">
+               <span class='parent-likes'>
+                  <span class="like_count" <%=@cocktail.id%>>
+                   <%= @cocktail.get_likes.size %> &#128591
+                  </span>
+                  
+                  <% if current_user %>
+                  <a>
+                   <% if current_user.voted_for? @cocktail %>
+                    <div> <%= link_to like_cocktail_path(@cocktail, 'unlike'), class: "preached-btn", method: :put, remote: :true do %> Liked </div>
+                   <% end %>
+                   <% else %>
+                    <div> <%= link_to like_cocktail_path(@cocktail, 'like'), class: "preach-btn", method: :put, remote: :true do %> Like </div>
+                   <% end %>
+                   <% end %>
+                  </a>
+                  <% end %>
+                 </span>
+               
+              </div> <!--heart-->
+              <button class = "likebutton">마음에 들어요!</button>
+            </div> <!--like-->
+          </div> <!--left-->
+          
+          
+          <div class = "right">
+            <div class = "tag">
+              <span class = "detailtag"># <%= @cocktail.tags[0] %></span>
+              <span class = "detailtag"># <%= @cocktail.tags[1] %></span>
+              <span class = "detailtag"># <%= @cocktail.tags[2] %></span>
+            </div>
+            
+            <div class = "detail">
+              <div class = "title">
+                <p>당도</p>
+                <p>도수</p>
+                <p>베이스</p>
+                <p>맛</p>
+              </div>  <!--title-->
+              <div class = "value">
+                <p><span class = "orange">●●●○○  <%= @cocktail.sugar[1] %></span></p>
+                <p><span class = "orange">●●●○○  <%= @cocktail.alcohol[1] %><</span></p>
+                
+                <p> <% @cocktail.base.each do |base| %><span><%= base %> </span><% end %></p>
+                <p> <% @cocktail.flavor.each do |flavor| %><span><%= flavor %></span><% end %></p>
+                <div class = "tequila"><img src = "/cocktail_components/base_tequila.svg"/></div>
+                <div class = "tropical"><img src = "/cocktail_components/flavor_tropical.svg"/></div>
+              </div>   <!--value-->
+            </div>  <!--detail-->
+            
+            <div class = "recipe">
+                <p><span class ="orange">칵테일 정보</span></p>
+                <p><%= auto_link(safe_join(@cocktail.information.split("\n"), tag(:br))) %></p>
+                <p><span class ="orange">레시피 소개</span></p>
+                <p><%= auto_link(safe_join(@cocktail.recipe.split("\n"), tag(:br))) %></p>
+            </div>
+            
+          </div>  <!--right-->
+        </div>  <!--floor2-->
+        
+        <h2>리뷰를 남겨주세요</h2>
+        <%= render 'comments/form' %>
+        
+        <h2><%= @cocktail.name %>에 대한 리뷰</h2>
+        <%= render @cocktail.comments %>
+
+        <div class = "floor1">
+          <div class = "username">
+            <p>한 줄 리뷰</p>
+            <p>Sthid12</p>
+          </div>
+          <div class = "text">
+            <input type = "text" class = "myreview"></input>
+            <p>최고의 칵테일</p>
+
+            <button class = "review">등록</button>
+            <button class = "delete">삭제</button>
+          </div>
+        </div>  <!--floor1-->
+     </div>  <!--lcocktail-->
+    </div>  <!--main-->
+            
+
+
+
+    <footer>
+        <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
+    </footer>
+</body>
+
