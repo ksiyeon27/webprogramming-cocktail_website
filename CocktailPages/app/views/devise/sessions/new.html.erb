@@ -1,26 +1,69 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
 
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <a href="main.html"><img class="cocktail-logo" src="logo.svg"></a>
+            </div>
+
+            <ul class="nav_menu">
+                <li><a href="main.html">오늘의 칵테일 검색하기</a></li>
+                <li><a href="#">마이 페이지</a></li>
+                <li><a href="#">전체 리스트</a></li>
+                <li><a href="#">맞춤 칵테일</a></li>
+                <li><a class='login' href="login.html">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class='user'>
+        <div class='lg_title'>
+            로그인
+        </div>
+        <div class='lg_elements'>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="field userid">
+    <%= f.label :Email %>
+    
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "inputbox_id" %>
+    
+</div>
+
+  <div class="field password">
+    
+    <%= f.label :비밀번호 %>
+    
+    <%= f.password_field :password, autocomplete: "current-password", :class => "inputbox_pw" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+  <div class="actions lg_btn">
+        <%= f.submit "로그인", :class => "button" %>
   </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
+            <div class='signup'>
+                <a href = "/users/sign_up">회원가입 하러가기</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
+    </footer>
+</body>
+</html>
+
+
