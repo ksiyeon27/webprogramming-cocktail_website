@@ -47,7 +47,7 @@
  <%= @cocktail.tags[0] %>,  <%= @cocktail.tags[1] %>,  <%= @cocktail.tags[2] %>
 </p>
  <strong>기타소개정보:</strong>
- <%= @cocktail.information %>
+  <%= auto_link(safe_join(@cocktail.information.split("\n"), tag(:br))) %> 
 </p>
 <p>
  <strong>당도:</strong>
