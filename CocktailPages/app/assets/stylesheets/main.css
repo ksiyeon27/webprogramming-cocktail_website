@@ -94,16 +94,19 @@ footer .creators {
 
 .select {
   border-radius: 10px;
-  width: 50%;
-  margin: 30px 25%;
+  width: 40%;
+  margin: 50px 4%;
   padding: 10px;
   background-color: rgba(255, 218, 208, 0.5);
   color: white;
 }
 
-
+.sugar-alcohol, .base-flavor{
+  overflow: hidden;
+}
 /*sugar*/
 .select-sugar {
+  float:left;
   height: 150px;
   overflow: hidden;
 }
@@ -125,6 +128,7 @@ footer .creators {
 }
 /*alcohol*/
 .select-alcohol {
+  float: left;
   height: 150px;
   overflow: hidden;
 }
@@ -147,10 +151,13 @@ footer .creators {
 
 /*base*/
 
-.checkbox-wrap { cursor: pointer; }
-.checkbox-wrap .check-icon  { display: inline-block; width: 18px; height: 18px; background: url('cocktail_components/base_vodka.svg') left center no-repeat; vertical-align: middle; transition-duration: .3s; }
-.checkbox-wrap input[type=checkbox] { display: none; }
-.checkbox-wrap input[type=checkbox]:checked + .check-icon { background-image: url('cocktail_components/base_vodka.svg'); }
+/*.checkbox-wrap { cursor: pointer; }*/
+/*.checkbox-wrap .check-icon  { display: inline-block; width: 18px; height: 18px; background: url('cocktail_components/base_vodka.svg') left center no-repeat; vertical-align: middle; transition-duration: .3s; }*/
+/*.checkbox-wrap input[type=checkbox] { display: none; }*/
+/*.checkbox-wrap input[type=checkbox]:checked + .check-icon { background-image: url('cocktail_components/base_vodka.svg'); }*/
+.select-base{
+    float:left;
+}
 .title-wrapper {
   overflow: hidden;
 }
@@ -228,6 +235,9 @@ footer .creators {
   margin-left: 5%;
 }
 /*flavor*/
+.select-flavor{
+    float:left;
+}
 .select-flavor h1 {
   font-size: 36px;
   margin-left: 30px;
