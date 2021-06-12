@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     get 'cocktails/recommend'
     get 'cocktails/search_result'
     
+   
     resources :cocktails do
       resources :comments
     end
