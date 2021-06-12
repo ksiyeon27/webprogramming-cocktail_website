@@ -1,0 +1,78 @@
+<!--#html 초기설정-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>cocktail list page</title>
+   
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href= "cocktail_list.css">
+    
+
+  </head>
+  
+ <!--#header 설정, 이후 application.html에서 공통으로 적용할 예정-->
+  <header>
+
+
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+   <script src="https://kit.fontawesome.com/fd324b66c7.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar">
+            <div class="nav_logo">
+                <a href="main.html"><img class="cocktail-logo" src="img\logo.svg"></a>
+            </div>
+<!--이거 route설정 다시 해야함-->
+            <ul class="nav_menu"> 
+                <li><%= link_to '오늘의 칵테일 검색하기', cocktails_search_path %></li>
+                <li><a href="mypage.html">마이 페이지</a></li>
+                <li><a href="index.html.erb" style="color:#F3553C">전체 리스트</a></li>
+                <li><a href="recommend_result.html">맞춤 칵테일</a></li>
+                <li><%= link_to '로그인', account_index_path %></li>
+            </ul>
+        </nav>
+  </header>
+  <main>
+      <h1 style="text-align: center; background-color: #F3553C; height: 130px"> <img src = "img/t.png" width="230px" height="130px"> </h1>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-5">
+       
+ 
+<!--<table>-->
+    
+<!-- <tr>-->
+<!--     <th>이름</th>-->
+<!--     <th>도수</th>-->
+     <!--<th>레시피</th>-->
+<!--     <th>베이스</th>-->
+     
+<!--     <th>맛</th>-->
+<!--     <th>태그</th>-->
+     <!--<th>기타소개정보</th>-->
+<!--     <th>당도</th>-->
+
+<!-- </tr>-->
+ 
+<!-- <% @cocktails.each do |cocktail| %>-->
+<!-- <tr>-->
+<!--     <td><%= link_to cocktail.name, cocktail_path(cocktail) %></td>-->
+<!--     <td><%= cocktail.alcohol %></td>-->
+     <!--<td><%= cocktail.recipe %></td>-->
+<!--     <td><%= cocktail.base %></td>-->
+<!--     <td><%= cocktail.flavor %></td>-->
+<!--     <td><%= cocktail.tags %></td>-->
+     <!--<td><%= cocktail.information %></td>-->
+<!--     <td><%= cocktail.sugar %></td>-->
+<!-- </tr>-->
+<!-- <% end %>-->
+ 
+<!--</table>-->
