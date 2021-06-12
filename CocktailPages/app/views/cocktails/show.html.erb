@@ -4,7 +4,7 @@
  <strong>이름:</strong>
  <%= @cocktail.name %>
  <span class='parent-likes'>
-  <span class="like_count" <%=@cocktail.id%>>
+  <span class="like_count" <%= @cocktail.id%> >
    <%= @cocktail.get_likes.size %> &#128591
   </span>
   

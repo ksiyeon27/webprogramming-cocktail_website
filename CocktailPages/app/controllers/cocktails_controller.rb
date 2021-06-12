@@ -33,6 +33,7 @@ class CocktailsController < ApplicationController
         elsif params[:format] == "unlike"
             @cocktail.unliked_by current_user
         end
+        redirect_to controller: 'cocktails', action: 'show'
     end    
 private
 
