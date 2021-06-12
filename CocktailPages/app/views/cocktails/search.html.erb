@@ -1,3 +1,318 @@
-<h1>Main Page - Cocktail Search</h1>
-<%= link_to '칵테일 리스트', cocktails_path %>
-<a href = "account/index">계정</a>
+
+
+
+<!--메인페이지 폼으로 받아올 형식 -> 각 검색 조건에 대한 어레이-->
+<!--input sugar = [1,2]-->
+<!--input_alcohol = [4,5]-->
+<!--input_base = [0]-->
+<!--input_taste = [3,6]-->
+<!--input_tag = [2,5,12]-->
+
+<!--검색, 추천 알고리즘에서 return 되는 값 -> 칵테일 id-->
+
+<!--# 당도 범위(1~5 Integer)-->
+<!--sugar_arr = Array.new(0)  → 예를 들어 3도이면 0~10도 범위이므로 [0,1]로 입력해주시면 됩니다!-->
+<!--# 도 범위(1~5 Integer)-->
+<!--alcohol_arr = Array.new(0)-->
+<!--# base 총 8개 -> int로 변형(0~8/0은 다 괜찮아요!)-->
+<!--base_arr = Array.new(0)-->
+<!--# 맛 총 8개 -> int로 변형(0~8/0은 다 괜찮아요!)-->
+<!--taste_arr = Array.new(0)-->
+<!--# 태그 총 12개 -> int로 변형(0~12/0은 미선택)-->
+<!--tag_arr = Array.new(0)-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--assets 에서 넘김-->
+    <!--<link type="text/css" rel="stylesheet" href="main.css" />--> 
+    <!--<script src="/rSlider.js"></script>    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/main.js"></script>
+    <title>Document</title>
+
+
+
+</head>
+<body>
+    <h1>Main Page - Cocktail Search</h1>
+    <%= link_to '칵테일 리스트', cocktails_path %>
+    <a href = "account/index">계정</a>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>
+            </div>
+
+            <ul class="nav_menu">
+                <li><a href="main.html">오늘의 칵테일 검색하기</a></li>
+                <li><a href="mypage.html">마이 페이지</a></li>
+                <li><a href="cocktail_list.html">전체 리스트</a></li>
+                <li><a href="recommend_result.html">맞춤 칵테일</a></li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search_title">
+        <span><img class="cock-logo" src="img/logo_crop.svg"></span>
+        검색해보세요!</div>
+    <div class="search_mainbg">
+        <div class="search_info">
+            칵테일바에 가서 메뉴판을 짠! 하고 연 순간,<br>
+            헉! 너무 많은 종류들과 잘 모르는 술 이름들, 혹시 당황스럽지 않으셨나요?<br>
+            혹은 오늘은 색다른 걸 마셔보고 싶은데 내가 원하는 거 어디 없나 고민하셨나요?<br>
+            내가 원하는 조건들을 쉽고 빠르게 콕! 콕! 고르기만 하면,<br>
+            당신을 위한 칵테일을 콕! 찾아주는 콕!테일 검색을 이용해보세요!<br>
+        </div>
+        
+        <!--Form 시작!!-->
+        <form action="/search_cocktail" method="get" accept-charset="UTF-8" >
+
+
+
+            <div class="select select-sugar">
+                <label for="sugarSlider">당도</label>
+                <div class="sugar-slider">
+                    <input type="text" name="sugar" id="sugarSlider" />
+                </div>
+            </div>
+            
+            <div class="select select-alcohol">
+                <label for="alcoholSlider">도수</label>
+                <div class="alcohol-slider">
+                    <input type="text" name="alcohol" id="alcoholSlider" />
+                </div>
+            </div>
+            
+            <!--<input type="checkbox" name="city_id[]" value="3" id="city_id_3">-->
+            <!--<label for="city_id_3">Berlin</label>-->
+            <!--<input type="checkbox" name="city_id[]" value="1" id="city_id_1">-->
+            <!--<label for="city_id_1">Chicago</label>-->
+            <!--<input type="checkbox" name="city_id[]" value="2" id="city_id_2">-->
+            <!--<label for="city_id_2">Madrid</label>-->
+            
+            <!--<label class="checkbox-wrap"><input type="checkbox" name="base[]" value="1"><i class="check-icon"></i> 보드카</label>-->
+            <!--<label class="checkbox-wrap"><input type="checkbox" name="transportation[]" value="대중교통"><i class="check-icon"></i> 대중교통</label>-->
+            <!--<label class="checkbox-wrap"><input type="checkbox" name="transportation[]" value="도보"><i class="check-icon"></i> 도보</label>-->
+
+    
+            <div class="select select-base">
+                <div class="title-wrapper">
+                    <h1>베이스</h1>
+                    <div class="all-btn1"><input type="checkbox" name="base[]" value=0 id="base_id_0" onclick="allCheck(event)"><label> 다 괜찮아요!</label></div>
+                </div>
+                
+
+                <br>
+    
+                <ul class="base-firstline">
+                    <!--'cocktail_components/base_vodka.svg'-->
+                    <!--<li><div class="circle1"><label><input type="checkbox" name="base[]" value="1"><img class="-btn" src="<%= asset_path 'cocktail_components/base_vodka.svg' %>"> 보드카</label></div></li>-->
+                    
+                    <li><div class="circle1"><img class="vodka-btn" src="<%= asset_path 'cocktail_components/base_vodka.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=1 id="base_id_1" onclick="checkAllList(event)">
+                        <label for="base_id_1">보드카</label>
+                    </li>
+                    <li><div class="circle2"><img class="gin-btn" src="<%= asset_path 'cocktail_components/base_gin.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=2 id="base_id_2" onclick="checkAllList(event)">
+                        <label for="base_id_2">&nbsp&nbsp진</label>
+                    </li>
+                    <li><div class="circle3"><img class="tequila-btn" src="<%= asset_path 'cocktail_components/base_tequila.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=3 id="base_id_3" onclick="checkAllList(event)">
+                        <label for="base_id_3">데킬라</label>
+                    </li>
+                    <li><div class="circle4"><img class="rum-btn" src="<%= asset_path 'cocktail_components/base_rum.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=4 id="base_id_4" onclick="checkAllList(event)">
+                        <label for="base_id_4">&nbsp&nbsp럼</label>
+                    </li>
+                </ul>
+    
+                <ul class="base-secondline">
+                    <li><div class="circle5"><img class="whiskey-btn" src="<%= asset_path 'cocktail_components/base_whiskey.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=5 id="base_id_5" onclick="checkAllList(event)">
+                        <label for="base_id_5">위스키</label>
+                    </li>
+                    <li><div class="circle6"><img class="wine-btn" src="<%= asset_path 'cocktail_components/base_wine.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=6 id="base_id_6" onclick="checkAllList(event)">
+                        <label for="base_id_6">&nbsp와인</label>
+                    </li>
+                    <li><div class="circle7"><img class="liqueur-btn" src="<%= asset_path 'cocktail_components/base_liqueur.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=7 id="base_id_7" onclick="checkAllList(event)">
+                        <label for="base_id_7">리큐르</label>
+                    </li>
+                    <li><div class="circle8"><img class="etc-btn" src="<%= asset_path 'cocktail_components/base_etc.svg' %>"></div>
+                        <input class="base_list" type="checkbox" name="base[]" value=8 id="base_id_8" onclick="checkAllList(event)">
+                        <label for="base_id_8">&nbsp기타</label>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="select select-flavor">
+                <div class="title-wrapper">
+                    <h1>맛</h1>
+                    <div class="all-btn2"><input type="checkbox" name="flavor[]" value=0 id="flavor_id_0" onclick="allCheckFlavor(event)"><label> 다 괜찮아요!</label></div>
+                </div>
+                
+                
+                
+                
+                <br>
+    
+    
+                <ul class="flavor-firstline">
+                    <li><div class="circle9"><img class="leaf-btn" src="<%= asset_path 'cocktail_components/flavor_leaf.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=1 id="flavor_id_1" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_1">풋풋풀잎</label>
+                    </li>
+                    <li><div class="circle10"><img class="berry-btn" src="<%= asset_path 'cocktail_components/flavor_berry.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=2 id="flavor_id_2" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_2">베리베리</label>
+                    </li>
+                    <li><div class="circle11"><img class="orange-btn" src="<%= asset_path 'cocktail_components/flavor_orange.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=3 id="flavor_id_3" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_3">오렌지향</label>
+                    </li>
+                    <li><div class="circle12"><img class="citrus-btn" src="<%= asset_path 'cocktail_components/flavor_citrus.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=4 id="flavor_id_4" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_4">시트러스</label>
+                    </li>
+                </ul>
+    
+                <ul class="flavor-secondline">
+                    <li><div class="circle13"><img class="choco-btn" src="<%= asset_path 'cocktail_components/flavor_choco.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=5 id="flavor_id_5" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_5">초코초코</label>
+                    </li>
+                    <li><div class="circle14"><img class="coffee-btn" src="<%= asset_path 'cocktail_components/flavor_coffee.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=6 id="flavor_id_6" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_6">커피커피</label>
+                    </li>
+                    <li><div class="circle15"><img class="creamy-btn" src="<%= asset_path 'cocktail_components/flavor_creamy.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=7 id="flavor_id_7" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_7">크리미한</label>
+                    </li>
+                    <li><div class="circle16"><img class="tropical-btn" src="<%= asset_path 'cocktail_components/flavor_tropical.svg' %>"></div>
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value=8 id="flavor_id_8" onclick="checkAllListFlavor(event)">
+                        <label for="flavor_id_8">트로피컬</label>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="select-tags">
+                <div class="tags-label tag-btn0">태그</div>
+                <div class="tags-name">
+                    <ul class="tag-firstline">
+                        <li><div class="tag-btn 1">
+                            <input type="checkbox" name="tag[]" value=1 id="tag_id_1">
+                            <label for="tag_id_1"># 상큼한</label>
+                        </div></li>
+                        <li><div class="tag-btn 2">
+                            <input type="checkbox" name="tag[]" value=2 id="tag_id_2">
+                            <label for="tag_id_2"># 새콤한</label>
+                        </div></li>
+                        <li><div class="tag-btn 3">
+                            <input type="checkbox" name="tag[]" value=3 id="tag_id_3">
+                            <label for="tag_id_3"># 알콜가득</label>
+                        </div></li>    
+                        <li><div class="tag-btn 4">
+                            <input type="checkbox" name="tag[]" value=4 id="tag_id_4">
+                            <label for="tag_id_4"># 민트좋아</label>
+                        </div></li>
+                        <li><div class="tag-btn 5">
+                            <input type="checkbox" name="tag[]" value=5 id="tag_id_5">
+                            <label for="tag_id_5"># 과일좋아</label>
+                        </div></li>
+                        <li><div class="tag-btn 6">
+                            <input type="checkbox" name="tag[]" value=6 id="tag_id_6">
+                            <label for="tag_id_6"># 부드러운</label>
+                        </div></li> 
+                        <li><div class="tag-btn 7">
+                            <input type="checkbox" name="tag[]" value=7 id="tag_id_7">
+                            <label for="tag_id_7"># 클래식한</label>
+                        </div></li>
+                        
+                    </ul>
+        
+                    <ul class="tag-secondline">
+                        <li><div class="tag-btn 8">
+                            <input type="checkbox" name="tag[]" value=8 id="tag_id_8">
+                            <label for="tag_id_8"># 청량한</label>
+                        </div></li>
+                        <li><div class="tag-btn 9">
+                            <input type="checkbox" name="tag[]" value=9 id="tag_id_9">
+                            <label for="tag_id_9"># 달달한</label>
+                        </div></li>
+                        <li><div class="tag-btn 10">
+                            <input type="checkbox" name="tag[]" value=10 id="tag_id_10">
+                            <label for="tag_id_10"># 예쁜색감</label>
+                        </div></li>    
+                        <li><div class="tag-btn 11">
+                            <input type="checkbox" name="tag[]" value=11 id="tag_id_11">
+                            <label for="tag_id_11"># 탄산톡톡</label>
+                        </div></li>
+                        <li><div class="tag-btn 12">
+                            <input type="checkbox" name="tag[]" value=12 id="tag_id_12">
+                            <label for="tag_id_12"># 롱드링크</label>
+                        </div></li>
+                        <li><div class="tag-btn 13">
+                            <input type="checkbox" name="tag[]" value=13 id="tag_id_13">
+                            <label for="tag_id_13"># 쌉싸름한</label>
+                        </div></li> 
+                        <li><div class="tag-btn 14">
+                            <input type="checkbox" name="tag[]" value=14 id="tag_id_14">
+                            <label for="tag_id_14"># 쓴맛가득</label>
+                        </div></li>
+                        
+
+                    </ul>
+                
+                </div>
+
+            </div>
+    
+    
+            <div class="select-submit">
+                <input type="submit" value="오늘의 칵테일은 너로 정했다! 콕!">
+            </div> 
+                      
+          
+          
+        </form>
+            
+            <!--form 끝-->
+    </div>
+
+    <footer>
+        <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
+    </footer>
+    
+    <script>
+        var mySlider = new rSlider({
+        target: '#sugarSlider',
+        values: ["단맛제로","당도1","당도2","당도3","단맛끝판왕"],
+        range: true,
+        tooltip: true,
+        scale: true,
+        labels:false,
+        set: [] });
+
+        var mySlider2 = new rSlider({
+        target: '#alcoholSlider',
+        values: ["0도","10도","20도","30도","40도"],
+        range: true,
+        tooltip: true,
+        scale: true,
+        labels:true,
+        set: [] });
+    </script>
+
+    <script src="/main.js"></script>
+</body>
+
+
