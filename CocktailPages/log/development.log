@@ -9846,3 +9846,628 @@ puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms)
+  [1m[36mCocktail Load (1.8ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_cocktail_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+[0m
+Started GET "/margarita.jpeg" for 182.224.69.16 at 2021-06-12 10:04:04 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/margarita.jpeg"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (6.4ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.1ms)
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 10:04:07 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mCocktail Load (2.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "블랙 러시안"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 보드카 50ml\n- 커피 리큐르 20ml"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 커피커피\n"], ["tags", "---\n- 쌉싸름한\n- 알콜가득\n- 클래식한\n"], ["information", "왠지 첩보 영화에 나올 것만 같은 이름의 칵테일, 블랙 러시안입니다! 블랙 러시안이라는 이름은 칵테일의 색이 검고, 러시아를 대표하는 술인 보드카를 사용한다고 해서 붙여졌어요.\n칵테일의 검은 색은 바로 커피 리큐르를 사용했기 때문인데요. 비교적 높은 도수임에도 커피 리큐르의 은근한 단맛이 느껴져서 매력적이랍니다. 사용하는 커피 리큐르의 종류에 따라 블랙 러시안의 당도도 달라진다는 사실! 커피를 좋아하신다면 블랙 러시안 한 잔 어떠신가요?"], ["created_at", "2021-06-12 11:24:11.735011"], ["updated_at", "2021-06-12 11:24:11.735011"], ["image", "black_russian.jpg"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 182.224.69.16 at 2021-06-12 11:25:35 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CocktailsController#search as HTML
+  Rendering cocktails/search.html.erb within layouts/application
+  Rendered cocktails/search.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 349ms (Views: 341.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:25:36 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 105ms (Views: 94.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cocktails/6" for 182.224.69.16 at 2021-06-12 11:25:38 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 6], ["votable_type", "Cocktail"], ["vote_flag", "t"]]
+  Rendered comments/_form.html.erb (35.6ms)
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 6]]
+  Rendered collection of comments/_comment.html.erb [1 times] (0.6ms)
+  Rendered cocktails/show.html.erb within layouts/application (86.1ms)
+Completed 200 OK in 151ms (Views: 142.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/black_russian.jpg" for 182.224.69.16 at 2021-06-12 11:25:38 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/black_russian.jpg"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (14.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.0ms)
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "다이키리"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 럼 60ml\n- 라임즙 20ml\n- 설탕 적당량"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 상큼한\n- 새콤한\n- 클래식한\n"], ["information", "'다이키리는 모히또와 더불어 어니스트 헤밍웨이가 사랑한 칵테일로도 유명하죠! 다이키리는 쿠바의 산티아고 해변 근처의 광산이름인데요. 과거 광선에서 근무하던 미국인 기술자가 친구들에게 대접하려 쿠바산 럼에 라임 주스와 설탕을 넣고 만든 것이 이 칵테일의 시초라고 해요.\n라임의 새콤한 맛이 설탕의 단 맛과 만나 상큼한 칵테일로 탄생되었답니다! 이 칵테일을 얼음과 함께 믹서로 갈면 샤베트 형태로 완성되는데, 이를 프로즌 다이키리라고 해요. 말만 들어도 여름에 딱인 칵테일이네요!"], ["created_at", "2021-06-12 11:26:14.121651"], ["updated_at", "2021-06-12 11:26:14.121651"], ["image", "daiquiri.jpg"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails/6" for 182.224.69.16 at 2021-06-12 11:26:18 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 6], ["votable_type", "Cocktail"], ["vote_flag", "t"]]
+  Rendered comments/_form.html.erb (2.4ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 6]]
+  Rendered collection of comments/_comment.html.erb [1 times] (0.6ms)
+  Rendered cocktails/show.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/black_russian.jpg" for 182.224.69.16 at 2021-06-12 11:26:18 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/black_russian.jpg"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (8.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:26:19 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 45ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/black_russian.jpg" for 182.224.69.16 at 2021-06-12 11:26:20 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/black_russian.jpg"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (6.4ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.4ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "쿠바 리브레"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 럼 50ml\n- 라임즙 10ml\n- 콜라 120ml"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 상큼한\n- 탄산톡톡\n- 롱드링크\n"], ["information", "Viva Cuba Libre! (비바 쿠바 리브레!) 바로 '자유 쿠바 만세'라는 뜻입니다.\n과거 스페인의 식민지였던 쿠바의 독립운동 당시 표어에서 유래된 이름인데요. 쿠바의 독립전쟁을 지원하기 위해 쿠바의 수도 하바나에 있던 미군이 우연히 럼에 콜라를 넣어 마신 것에서 탄생했다고 합니다.\n콜라의 달달한 맛과 톡톡 튀는 탄산이 새콤한 라임주스와 어우러져 가볍고 상큼하게 마시기 좋은 칵테일이 되었답니다! 콜라를 좋아한다면 클래식한 쿠바 리브레 칵테일은 한 번쯤 마셔봐야죠!"], ["created_at", "2021-06-12 11:26:26.985704"], ["updated_at", "2021-06-12 11:26:26.985704"], ["image", "cuba_libre.jpg"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:26:30 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.2ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cocktails/8" for 182.224.69.16 at 2021-06-12 11:26:32 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCocktail Load (0.1ms)[0m  [1m[34mSELECT  "cocktails".* FROM "cocktails" WHERE "cocktails"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering cocktails/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 8], ["votable_type", "Cocktail"], ["vote_flag", "t"]]
+  Rendered comments/_form.html.erb (2.9ms)
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."cocktail_id" = ?[0m  [["cocktail_id", 8]]
+  Rendered collection of comments/_comment.html.erb [1 times] (0.5ms)
+  Rendered cocktails/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cuba_libre.jpg" for 182.224.69.16 at 2021-06-12 11:26:32 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/cuba_libre.jpg"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (8.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.9ms)
+Started GET "/cuba_libre.jpg" for 182.224.69.16 at 2021-06-12 11:26:35 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/cuba_libre.jpg"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (7.5ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "네그로니"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 1\n- 1\n"], ["recipe", "- 진 30ml\n- 캄파리 30ml\n- 스위트 베르무트 30ml"], ["base", "---\n- 진\n"], ["flavor", "---\n- 쌉쌀풀잎\n- 오렌지향\n"], ["tags", "---\n- 쓴맛가득\n- 클래식한\n- 알콜가득\n"], ["information", "'클래식한 칵테일의 대명사 중 하나인 네그로니입니다. 이 칵테일의 이름은 과거 이탈리아의 '카미로 네그로니' 백작이 자신의 단골 레스토랑에 가서 이 칵테일을 식전주로 즐겨 마시던 것에서 유래하였습니다. 그 레스토랑의 바텐더가 백작의 허락을 받아서 '네그로니'라는 이름으로 발표했다고 하네요.\n아메리카노라는 칵테일을 아시나요? 이 칵테일은 아메리카노 칵테일에 탄산수를 빼고 드라이 진을 첨가한 버전이랍니다. 캄파리의 쌉싸름한 맛이 다른 재료들과 부드럽게 어우러져 그 맛이 매력적이고 중독적인 칵테일이에요!"], ["created_at", "2021-06-12 11:26:43.071435"], ["updated_at", "2021-06-12 11:26:43.071435"], ["image", "negroni.jpg"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "그래스호퍼"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 크렘 드 카카오 (화이트) 20ml\n- 크렘 드 망뜨 (그린) 20ml\n- 생크림 20ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 초코초코\n- 크리미한\n"], ["tags", "---\n- 민트좋아\n- 부드러운\n- 예쁜색감\n"], ["information", "코 끝에선 화~! 입 안에선 후~! 혹시 민초단이신가요?! 그렇다면 반드시 마셔봐야하는 칵테일, 그래스호퍼입니다. 그래스호퍼는 영어로 메뚜기를 뜻하는데, 완성된 칵테일의 색이 연한 초록빛을 띠는 것에서 유래된 이름이랍니다.\n민트의 상큼한 향기와 초콜렛의 달콤한 맛이 함께 어우러져 민트초코를 좋아하시는 분들의 마음을 저격할 칵테일입니다! 또, 생크림이 들어가 더욱 부드럽게 민트초코맛을 즐길 수 있다는 사실!\n* 크렘 드 망뜨 = 민트맛 리큐르 * 크렘 드 카카오 = 초콜렛맛 리큐르"], ["created_at", "2021-06-12 11:26:51.613711"], ["updated_at", "2021-06-12 11:26:51.613711"], ["image", "grasshopper.jpg"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "B-52"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 커피 리큐르 10ml\n- 베일리스 (아이리쉬 크림 리큐르) 10ml\n- 그랑 마니에르 10ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 커피커피\n- 크리미한\n"], ["tags", "---\n- 달달한\n- 부드러운\n- 쌉싸름한\n"], ["information", "B-52는 대표적인 슈터 칵테일* 중 하나로, 과거 미국 보잉사에서 제작한 전략폭격기 B-52에서 그 이름을 따온 칵테일이라고 해요. 칵테일 양은 적지만, 꽤 센 도수를 가지고 있어서 이름 그대로 위력이 파괴적인 칵테일이죠.\n커피와 코냑의 오렌지 향, 그리고 초콜릿과 크림으로 만든 베일리스 리큐르가 어우러져 달콤한 맛과 향이 매력적이랍니다. 한 잔 두 잔 마시다보면 정신을 차릴 수 없을 지도 몰라요!\n*슈터 칵테일은 주로 아주 작은 잔에 재료를 하나씩 쌓아서 만든 칵테일인데, 과거에는 각각 다른 층을 차례로 마셨다고 하지만 요즘은 한 번에 원샷해서 즐기는 경우가 많아요."], ["created_at", "2021-06-12 11:26:58.746977"], ["updated_at", "2021-06-12 11:26:58.746977"], ["image", "b-52.jpg"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:27:02 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (1.9ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 1.9ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "피냐콜라다"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 화이트 럼 50ml\n- 코코넛 크림 30ml\n-파인애플 주스 50ml"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 트로피컬\n"], ["tags", "---\n- 과일좋아\n- 부드러운\n- 롱드링크\n"], ["information", "'카리브해에서 만들어진 피냐 콜라다는 트로피컬 칵테일의 표준이라고 할 수 있는 칵테일입니다. 'Pina Colada'라는 이름은 스페인어로 '파인애플이 무성한 언덕'이라는 의미를 지니고 있습니다. 코코넛의 향과 파인애플의 상큼함 덕분에 칵테일을 접해보지 않은 사람들이라도 쉽게 즐길 수 있습니다.\n피냐 콜라다는 다양한 레시피가 존재하는데, 보존성이 좋지 않은 코코넛 크람 대신 '피냐 콜리다 믹스'를 사용하는 레시피가 많이 사용됩니다. 이 외에도 베이스를 보드카로 바꾼 '치치', 럼을 뺀 무알콜 칵테일인 '버진 피나 콜라다' 등 다양한 바리에이션이 존재합니다."], ["created_at", "2021-06-12 11:27:09.467908"], ["updated_at", "2021-06-12 11:27:09.467908"], ["image", "pina_colada.jpg"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:27:14 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "마이타이"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 3\n- 3\n"], ["recipe", "- 화이트 럼 45ml\n-오렌지 큐라소 22.5ml\n- 라임 주스 22.5ml\n- 오르쟈 15ml\n- 다크 럼 15ml"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 오렌지향\n- 시트러스\n"], ["tags", "---\n- 상큼한\n- 과일좋아\n- 롱드링크\n"], ["information", "마이 타이는 타히치어로 최고라는 뜻입니다. 어느 바텐더가 타히치인에게 17년산 럼으로 이 칵테일을 만든 후 보여주자, 그 사람이 맛을 본 후 '마이 타이'라며 찬사를 보낸 것이 이름의 유래입니다.\n마이 타이는 라임과 오렌지 향이 나는 가운데 럼과 오르쟈(아몬드 시럽)의 향이 이를 받쳐주어 독특한 맛을 냅니다. 더운 여름에 상큼함을 원하신다면 최고의 칵테일인 마이 타이를 추천드려요!"], ["created_at", "2021-06-12 11:27:20.547584"], ["updated_at", "2021-06-12 11:27:20.547584"], ["image", "mai_tai.jpg"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "롱 아일랜드 아이스티"], ["alcohol", "---\n- 2\n- 4\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 보드카 15ml\n- 데킬라 15ml\n- 화이트 럼 15ml\n- 진 15ml\n- 꼬앵트로 15ml\n- 레몬 주스 30ml\n- 설탕 시럽 20ml\n-콜라 적당량"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 탄산톡톡\n- 상큼한\n- 롱드링크\n"], ["information", "얼핏 보면 아이스티로 착각하기 쉽지만 엄연한 칵테일입니다. 이름이 길어서 한국에서는 줄여서 '롱티'라고 부르는 경우가 많습니다.\n롱티는 이름, 외관 뿐 아니라 맛도 얼핏 보면 레몬맛의 아이스티와 비슷합니다. 거기에 콜라의 단맛이 알코올의 맛을 가려서 어느새 많이 마시게 되는 칵테일입니다. 그러나 아이스티라는 이름과 다르게 보드카, 진 등 40도가 넘는 술이 섞인 도수가 높은 술이라 먹다 보면 쉽게 취하기도 합니다. 실제로 미국 드라마 빅뱅 이론에서 등장인물이 롱티를 마시고 취하는 장면이 나오기도 합니다."], ["created_at", "2021-06-12 11:27:28.434895"], ["updated_at", "2021-06-12 11:27:28.434895"], ["image", "long_island_iced_tea.jpg"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "마티니"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 1\n- 1\n"], ["recipe", "- 진 60ml\n- 드라이 베르무트 10ml"], ["base", "---\n- 진\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 쌉싸름한\n- 쓴맛가득\n- 알콜가득\n"], ["information", "'보드카 마티니, 젓지 말고 흔들어서' 007 시리즈를 상징하는 클리셰로 주인공인 제임스 본드가 마티니를 주문하는 대사입니다. 마티니는 진과 드라이 베르무트를 잘 저어서 만드는 칵테일로, 드라이 베르무트를 생산하는 회사의 이름인 '마티니 앤 로시'에서 유래된 것입니다.\n마티니는 일반적으로 흔드는 것이 아닌 휘젓는 방식을 이용해 만듭니다. 마티니를 섞어서 만들게 되면 술의 맛이나 향이 약해지기 때문에 휘젓는 방식을 채택한다고 합니다. 쌉싸름하고 독한 술을 마시고 싶다면 마티니를 주문해보세요!"], ["created_at", "2021-06-12 11:27:39.713354"], ["updated_at", "2021-06-12 11:27:39.713354"], ["image", "martini.jpg"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:27:42 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "모스코 뮬"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 스미노프 보드카 45ml\n- 진저 비어 120ml\n- 라임 주스 10ml"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 청량한\n- 탄산톡톡\n- 롱드링크\n"], ["information", "1940년 미국 할리우드의 'Cock&Bull'이라는 술집에서 만들어진 칵테일입니다. 당시에 모스코 뮬은 구리로 만든 머그를 이용해 마시는 것으로 홍보되었기 때문에 현재도 모스코 뮬을 주문하면 구리잔에 담아 나오는 모습을 자주 볼 수 있습니다.\n상큼한 라임의 향과 은은한 생강향이 어우러진 모스코 뮬은 보드카도 소량 들어가기 때문에 술을 잘 못하는 사람이라도 부담 없이 마실 수 있습니다."], ["created_at", "2021-06-12 11:27:51.238923"], ["updated_at", "2021-06-12 11:27:51.238923"], ["image", "moscow_mule.jpg"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:27:54 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "블루 하와이안"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 라이트 럼 45ml\n- 블루 큐라소 22.5ml\n- 파인애플 주스 60ml\n- 코코넛 크림 22.5ml\n- 레몬 주스 15ml"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 트로피컬\n"], ["tags", "---\n- 예쁜색감\n- 과일좋아\n- 롱드링크\n"], ["information", "칵테일을 마시는 즐거움 중 하나가 그 아름다운 색을 보는 것인데요, 블루 하와이안은 시원한 바다를 연상하게 하는 푸른색이 매력적인 칵테일입니다.\n블루 하와이안은 블루 하와이에서 파생된 칵테일로 블루 하와이에 코코넛 크림을 추가하여 색다른 맛을 냅니다. 블루 하와이를 좋아하신다면, 혹은 더운 여름에 마실 칵테일을 찾는다면 눈과 입을 모두 시원하게 해줄 블루 하와이안을 추천드립니다."], ["created_at", "2021-06-12 11:28:01.040539"], ["updated_at", "2021-06-12 11:28:01.040539"], ["image", "blue_hawaiian.jpg"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "사이드카"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "-코냑 50ml\n- 트리플 섹 20ml\n- 레몬 주스 20ml"], ["base", "---\n- 기타\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 클래식한\n- 상큼한\n- 새콤한\n"], ["information", "브랜디를 베이스로 한 칵테일입니다. 본래 사이드카라 하면 오토바이 옆에 좌석을 설치하여 두 사람이 탈 수 있도록 하는 장치를 말하는데요, 1차 세계대전 당시 사이드카를 타고 온 병사가 자주 마신 칵테일이라 이러한 이름이 붙었다고 합니다. 브랜디, 레몬, 트리플 섹이라는 재료의 사용으로 풍부한 과일 향과 은은한 단맛이 매력적입니다. 도수가 꽤나 높은 술이기에 술을 잘 못하는 분들에게는 독할 수도 있지만 상큼하고 달콤한 맛으로 많은 사람들에게 사랑을 받는 칵테일입니다."], ["created_at", "2021-06-12 11:28:07.765844"], ["updated_at", "2021-06-12 11:28:07.765844"], ["image", "side_car.jpg"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "러스티 네일"], ["alcohol", "---\n- 4\n- 5\n"], ["sugar", "---\n- 2\n"], ["recipe", "- 스카치 위스키 45ml\n- 드람뷔 25ml"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 알콜가득\n- 클래식한\n- 부드러운\n"], ["information", "'직역하면 '녹슨 못', 또는 속어로 '고풍스러운'이라는 의미를 담고 있는 칵테일입니다.\n위스키와 드람뷔, 단 두개의 재료로 이루어져 있기에 어떤 재료를 쓰냐에 따라 맛이 크게 변하는 칵테일이기도 합니다. 꿀 특유의 단맛과 위스키 베이스라는 특징 덕분에 겨울철이나 식후에 먹는 칵테일로 추천됩니다."], ["created_at", "2021-06-12 11:28:14.171177"], ["updated_at", "2021-06-12 11:28:14.171177"], ["image", "rusty_nail.jpg"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "올드 패션드"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 1\n- 1\n"], ["recipe", "- 버번 혹은 라이 위스키 45ml\n- 각설탕 1개\n- 앙고스투라 비터 소량\n- 물 소량"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 쌉싸름한\n- 알콜가득\n- 클래식한\n"], ["information", "올드 패션드는 미국 켄터키주의 벤텐스 클럽에 모여든 경마 팬을 위해 만들어진 칵테일입니다. 한 때 유행했던 '토디'라는 술과 맛과 형태가 비슷해 과거의 추억을 되살려준다는 의미로 붙여진 이름입니다. 처음 마셨을 때는 위스키의 향과 비터의 쓴 맛이 강하게 느껴지지만 시간이 지날수록 설탕이 녹으며 다양한 맛을 느낄 수 있는 매력이 있습니다. 올드 패션드는 만들기 간단하고 역사가 오래되어 다양한 레시피와 바리에이션이 존재합니다. 때문에 바의 특색을 느낄 수 있는 칵테일입니다."], ["created_at", "2021-06-12 11:28:19.229898"], ["updated_at", "2021-06-12 11:28:19.229898"], ["image", "old_fashioned.jpg"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "위스키 사워"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 버번 위스키 60ml\n- 레몬 주스 22.5ml\n- 설탕시럽 30ml\n- 앙고스트라 비터 3방울\n- 계란흰자 15ml"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 새콤한\n- 부드러운\n- 클래식한\n"], ["information", "위스키 사워는 무려 1700년대부터 레시피가 존재했던 역사 깊은 칵테일 중 하나입니다\n씁쓸한 위스키의 맛과 함께 설탕 시럽이 달콤함을 선사하고, '사워'라는 이름에 걸맞게 신맛도 함께 들어가있어 식전 에피타이저로 매우 유명합니다. 조화로운 맛으로 인해 아주 오래전부터 대중적인 위스키 베이스 칵테일로 사랑 받아왔어요!\n클래식 칵테일을 시도해보고 싶은 분들에게 추천드립니다."], ["created_at", "2021-06-12 11:28:26.023662"], ["updated_at", "2021-06-12 11:28:26.023662"], ["image", "whiskey_sour.png"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:28:32 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "코스모폴리탄"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 보드카 30ml\n- 트리플 섹 30ml\n- 크랜베리 주스 45ml\n- 라임 주스 15ml"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 시트러스\n- 베리베리\n"], ["tags", "---\n- 상큼한\n- 예쁜색감\n- 과일좋아\n"], ["information", "영화 '섹스 앤 더 시티'에서 주인공 캐리 브래드쇼가 즐겨 마시던 칵테일을 기억하시나요?\n세계적인 도시인 뉴욕을 대표하는 칵테일이라는 명성에 걸맞은 이름을 가진 '코스모폴리탄'은 크랜베리 특유의 붉은 색으로 남녀노소 인기가 많습니다!\n보드카 베이스에 오렌지, 라임, 크랜베리 등과 같이 다양한 과일 향이 함께 들어가 상큼한 맛을 냅니다."], ["created_at", "2021-06-12 11:28:40.023515"], ["updated_at", "2021-06-12 11:28:40.023515"], ["image", "cosmopolitan.jpg"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:28:43 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "블러디 메리"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 3\n- 3\n"], ["recipe", "- 보드카 60ml\n- 토마토주스 120ml\n- 레몬주스 15ml\n- 핫소스 8방울\n- 우스터 소스 4스푼\n- 후추 소량\n- 샐러리 소금 소량"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 클래식한\n- 새콤한\n- 부드러운\n"], ["information", "'칵테일에도 해장술이 있다는 걸 알고 계셨나요? 피를 연상시키는 진한 붉은 색 때문에 잉글랜드 여왕 메리 1세의 별칭이었던 '피로 물든 메리'의 이름이 붙여진 칵테일이 바로 그 주인공입니다.\n상큼하고 달달한 다른 칵테일과 다르게 블러디 메리는 토마토, 우스터 소스, 소금, 후추 등의 독특한 조합으로 칵테일 형태를 한 수프로 통하고 있습니다. 레몬주스 양을 늘리면 상큼함이 강해져 부담없이 즐길 수 있어요!"], ["created_at", "2021-06-12 11:28:58.090349"], ["updated_at", "2021-06-12 11:28:58.090349"], ["image", "bloody_mary.jpg"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "데킬라 선라이즈"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 3\n- 3\n"], ["recipe", "- 데킬라 45ml\n- 오렌지주스 90ml\n- 석류 시럽 15ml"], ["base", "---\n- 데킬라\n"], ["flavor", "---\n- 오렌지향\n"], ["tags", "---\n- 과일좋아\n- 예쁜색감\n- 롱드링크\n"], ["information", "데킬라 선라이즈는 이름 그대로 일출을 연상시키는, 압도적인 색감을 자랑하는 칵테일입니다.\n아래 가라앉은 석류 시럽을 잘 저어 먹게 되면 오렌지 맛에 달달함을 더할 수 있습니다. 칵테일을 섞기 전 예쁜 그라데이션을 눈에 담는 것을 잊지 마세요!\n알코올 도수가 높지 않고 레시피가 간단하여 평소 부담없이 즐길 수 있는 대중적인 칵테일입니다."], ["created_at", "2021-06-12 11:29:05.066823"], ["updated_at", "2021-06-12 11:29:05.066823"], ["image", "tequila_sunrise.png"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "키르"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 화이트 와인 90ml\n- 크렘 드 카시스 10ml"], ["base", "---\n- 와인\n"], ["flavor", "---\n- 베리베리\n"], ["tags", "---\n- 상큼한\n- 새콤한\n- 예쁜색감\n"], ["information", "키르는 대표적인 와인 칵테일 중 하나로, 고급스러운 이미지를 가지고 있습니다. 부르고뉴 지방에서 외부인의 방문을 환영하기 위한 목적으로 처음 만들어졌으며 그 지방의 특산품인 화이트 와인과 카시스를 이용합니다.\n원래 이름은 블랑 카스(Blanc Cass)였지만, 그 당시 시장 이름을 따 지금의 '키르'가 되었다고 해요! 얼음을 사용하지 않는 것이 특징입니다."], ["created_at", "2021-06-12 11:29:12.011184"], ["updated_at", "2021-06-12 11:29:12.011184"], ["image", "kir.jpeg"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "피치 크러쉬"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 보드카 30ml\n- 피치 슈냅스 30ml\n- 설탕 시럽 22ml\n- 레몬주스 22ml\n- 크랜베리 주스 45ml"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 베리베리\n"], ["tags", "---\n- 과일좋아\n- 예쁜색감\n- 롱드링크\n"], ["information", "복숭아와 크랜베리 향이 매력적인 피치크러시는 달콤한 과일맛으로 대중적인 인기를 누리고 있는 칵테일 입니다.\n복숭아 리큐어와 크랜베리 주스로 예쁜 색감을 만들어낼 수 있으며, 도수가 높지 않아 칵테일 입문자에게 많은 추천을 받는답니다.\n시원한 얼음을 함께 넣어 여름 바다에 있는 듯한 트로피컬함을 느껴보세요!"], ["created_at", "2021-06-12 11:29:17.673557"], ["updated_at", "2021-06-12 11:29:17.673557"], ["image", "peach_crush.jpg"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:29:21 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "베일리스 밀크"], ["alcohol", "---\n- 0\n- 1\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 베일리스 50ml\n- 우유 100ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 초코초코\n- 크리미한\n"], ["tags", "---\n- 부드러운\n- 달달한\n- 클래식한\n"], ["information", "베일리스 밀크의 베이스가 되는 '베일리스'는 아이리시 위스키와 크림, 벨기에 초콜릿으로 만든 세계 최초의 크림 리큐르입니다.\n고소한 크림과 초콜렛의 풍미로 깊은 단맛을 좋아하는 사람들에게 인기가 높습니다. 깔루아 밀크를 즐겨마신 분들이라면 베일리스 밀크의 매력에도 분명 빠지실 거예요!칵테일 중에서는 아주 낮은 도수를 가지고 있어 부담 없이 즐기실 수 있습니다."], ["created_at", "2021-06-12 11:29:27.409704"], ["updated_at", "2021-06-12 11:29:27.409704"], ["image", "baileys_milk.png"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "모히또"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 화이트 럼 45ml\n- 라임주스 20ml\n- 민트 잎 6조각\n- 백색 수수 설탕 2스푼\n- 탄산수 15ml"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 민트좋아\n- 청량한\n- 탄산톡톡\n"], ["information", "쿠바의 전통 음료로 시작된 모히토는 헤밍웨이가 사랑한 칵테일로 꼽히기도 합니다.\n민트와 라임의 청량함이 탄산과 어우러져 달달함과 새콤함을 함께 주지만 끝맛이 씁쓸하게 끝나 입체적인 풍미를 더합니다.\n’마법의 부적'이라는 스페인어 Mojo에서 유래된 이름처럼 여러분들도 모히토를 먹은 후 행복한 일만 가득하시길!"], ["created_at", "2021-06-12 11:29:33.197721"], ["updated_at", "2021-06-12 11:29:33.197721"], ["image", "mojito.jpg"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "하이볼"], ["alcohol", "---\n- 0\n- 1\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 위스키 30ml\n- 토닉워터 120ml\n- 레몬즙 소량"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 청량한\n- 클래식한\n- 탄산톡톡\n"], ["information", "하이볼은 이름의 유래가 매우 다양합니다. 대표적으로는 제조법이 간단하여 '빠르고 신속하게' 라는 뜻을 가지게 되었다고 합니다. 실제로 분주하게 일을 하는 기차 식당칸 내 바텐더들 사이에서 슬랭으로 많이 쓰였다고 해요.\n기본적으로는 스카치 위스키에 탄산수를 섞어 마시는 형식이지만, 대중화되면서 개인의 취향별로 주조법이 매우 다양합니다! 나에게 맞는 하이볼은 무엇인지 알아보는 것도 큰 즐거움이랍니다."], ["created_at", "2021-06-12 11:29:38.896803"], ["updated_at", "2021-06-12 11:29:38.896803"], ["image", "highball.jpg"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "카시스 프라페"], ["alcohol", "---\n- 0\n- 1\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 크렘 드 카시스 22ml\n- 피치트리 15ml\n- 코코넛 럼 15ml\n- 오렌지주스 30ml\n- 사워믹스 30ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 베리베리\n"], ["tags", "---\n- 과일좋아\n- 예쁜색감\n- 상큼한\n"], ["information", "카시스 프라페는 와인 리큐르인 크렘 드 카시스를 베이스로 하는 칵테일로, 짙은 과일향 때문에 대중적으로 높은 인기를 가집니다.\n’키스를 부르는 칵테일'이라는 별명이 아주 유명한데요, 카시스 프라페를 마시면 달콤하고도 진한 향이 입에 남기 때문이라고 합니다. 연인들에게 가장 많이 사랑받는 칵테일이지요!"], ["created_at", "2021-06-12 11:29:44.136012"], ["updated_at", "2021-06-12 11:29:44.136012"], ["image", "cassis_frappe.jpg"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:29:47 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (1.1ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "진 토닉"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 1\n- 1\n"], ["recipe", "- 진 60ml\n- 토닉워터 150ml"], ["base", "---\n- 진\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 쌉싸름한\n- 탄산톡톡\n- 청량한\n"], ["information", "세계적인 칵테일 중 하나인 진 토닉은 쌉쌀하면서도 청량한 맛으로 수많은 사람들의 선택을 받아왔습니다.\n주조법이 굉장히 간단하여 집에서도 쉽게 만들어먹을 수 있지만, 그만큼 실력자와 아마추어의 차이가 극명하게 보이는 칵테일이기도 하죠!\n달달함과 청량함 뒤에 남는 씁쓸한 맛은 질리지 않고 진 토닉을 즐기게 하는 원동력입니다."], ["created_at", "2021-06-12 11:29:53.029981"], ["updated_at", "2021-06-12 11:29:53.029981"], ["image", "gin_tonic.jpg"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "파우스트"], ["alcohol", "---\n- 4\n- 5\n"], ["sugar", "---\n- 3\n- 3\n"], ["recipe", "- 오버프루프 럼 30ml\n- 화이트 럼 30ml\n- 크렘 드 카시스 15ml"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 베리베리\n"], ["tags", "---\n- 클래식한\n- 알콜가득\n- 예쁜색감\n"], ["information", "괴테의 <파우스트>라는 소설은 괴테의 60년 역작으로 불리는 명작인데요, 이 소설속 박사의 이름을 따서 이 칵테일이 만들어졌습니다! 주인공 파우스트 박사가 악마의 속삭임에 이끌려 자신의 영혼을 파는 선택으르 고민하는 박사의 번뇌와 고민을 칵테일로 풀어 낸 것입니다.\n이 칵테일은 '표준량 이상으로 알코올을 포함한 럼'인 오버프루프 럼이 들어가서 매우 도수가 높은 칵테일입니다! 또 카시스의 향긋하고 달달한 향 또한 느끼실 수 있어, 도수가 높으면서도 달달한 칵테일을 원하시는 분께 추천드려요."], ["created_at", "2021-06-12 11:30:03.463665"], ["updated_at", "2021-06-12 11:30:03.463665"], ["image", "faust.jpg"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "카이피로스카"], ["alcohol", "---\n- 4\n- 5\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 보드카 60ml\n- 설탕 시럽 1 tsp\n- 라임 4조각  "], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 알콜가득\n- 상큼한\n- 새콤한\n"], ["information", "상큼한 맛의 카이피로스카는 스웨덴의 보드카 브랜드가 마케팅 목적으로 만든 칵테일이라고 합니다! 북유럽뿐 안니라 남미에서도 큰 인기를 얻었는데요, 식전에 마시기 좋은 상큼한 칵테일입니다!\n카이피리냐 칵테일에서 카샤샤 대신 보드카가 들어간 칵테일입니다. 카이피로스카가 마음에 드셨다면 카이피리냐도 추천드려요!"], ["created_at", "2021-06-12 11:30:09.545378"], ["updated_at", "2021-06-12 11:30:09.545378"], ["image", "caipiroska.jpg"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "레몬 드롭 마티니"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 보드카 시트론 30ml\n- 트리플 섹 20ml\n- 레몬 주스 15ml  "], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 과일좋아\n- 새콤한\n- 상큼한\n"], ["information", "레몬 드롭 마티니는 매우 인기있는 훌륭한 보드카 마티니 중 하나입니다!\n달콤하고 상쾌하며 약간 시큼한 맛의 레몬 드롭 마티니는 완벽한 봄 칵테일이며 만드는 방법 또한 매우 간단합니다!\n레몬 맛의 사탕을 생각나게 하는 레몬 드롭 마티니! 신나고 경쾌한 분위기에 추천드립니다."], ["created_at", "2021-06-12 11:30:15.010344"], ["updated_at", "2021-06-12 11:30:15.010344"], ["image", "lemon_drop_martini.jpg"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "섹스 온 더 비치"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 보드카 40ml\n- 피치 슈냅스 20ml\n- 오렌지 주스 40ml\n- 크랜베리 주스 40ml"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 오렌지향\n"], ["tags", "---\n- 과일좋아\n- 예쁜색감\n- 상큼한\n"], ["information", "무척이나 개성넘치는 이름 때문에 인기가 많은 칵테일입니다! 1987년에 만들어졌지만 의외로 공식 고전 레시피로 빨리 자리 잡았습니다.\n플로리다의 마이애미 해변의 연장선상에 위치해 있는 포트로더데일(Fort Lauderdale)에서 열린 1,000달러짜리 칵테일 경연에서 Ted Pizio라는 젊은 바텐더가 출품한 것인데요, 이름의 유래는, 휴양지인 포트로더데일에 사람들이 오는 이유가 해변 위에서의 야외섹스였는데, 여기서 영감이 떠올라 'Sex on the Beach!'라고 외친데서 비롯되었다고 합니다!\n남자가 이 칵테일을 시켜주어 여자가 마신다면 반드시 두 사람은 키스를 나누어야 한다는 풍습도 있다고 하네요."], ["created_at", "2021-06-12 11:31:31.817228"], ["updated_at", "2021-06-12 11:31:31.817228"], ["image", "sex_on_the_beach.png"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:31:36 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.5ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "벨리니"], ["alcohol", "---\n- 0\n- 1\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 프로세코 100ml\n- 피치 퓨레 50ml"], ["base", "---\n- 와인\n"], ["flavor", "---\n- 트로피컬\n"], ["tags", "---\n- 과일좋아\n- 예쁜색감\n- 상큼한\n"], ["information", "샴페인 또는 스파클링 와인과 과일을 이용하는 대표적인 칵테일 중 하나입니다!\n15세기 이탈리아의 르네상스 화가 지오반니 벨리니(Giovanni Bellini)의 이름을 딴 것이라 합니다. 이러한 이름의 칵테일이 처음 만들어진 것은 약 1948년 베니스의 해리스 바(Harry's Bar)로, 이것을 만든 바텐더가 바로 지오반니 벨리니의 그림에서 영감을 받아 만들게 된 것이라 하네요!"], ["created_at", "2021-06-12 11:31:59.471404"], ["updated_at", "2021-06-12 11:31:59.471404"], ["image", "bellini.jpg"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "미모사"], ["alcohol", "---\n- 0\n- 1\n"], ["sugar", "---\n- 3\n- 3\n"], ["recipe", "- 프로세코 75ml\n- 오렌지 주스 75ml  "], ["base", "---\n- 와인\n"], ["flavor", "---\n- 오렌지향\n"], ["tags", "---\n- 과일좋아\n- 상큼한\n- 예쁜색감\n"], ["information", "스파클링 와인과 오렌지 주스를 1:1로 섞어주기만 하면 끝인 단순한 칵테일로 대표적인 식후주로 쓸 수 있는 칵테일의 하나라 할 수 있습니다!\n'미모사'라는 이름은 꽃의 한 종류인 미모사 꽃에서 따온 것인데요, 오렌지 주스가 들어가 밝은 노란색을 띠는 이 칵테일이 미모사 꽃을 닮았다는데서 붙은 것이라 합니다!\n이 칵테일은 약 1920년대 프랑스 파리에서 정착된 오래된 레시피의 칵테일입니다!이 페이지에서 소개된 레시피는 스파클링 와인과 오렌지 주스를 1:1로 섞는 것이지만, 오렌지의 비율을 늘려 스파클링 와인과 오렌지의 비율을 1:2 등으로 만드는 경우도 있다고 하네요!"], ["created_at", "2021-06-12 11:32:37.825616"], ["updated_at", "2021-06-12 11:32:37.825616"], ["image", "mimosa.jpg"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:32:41 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.5ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "민트 줄렙"], ["alcohol", "---\n- 4\n- 5\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 버번 위스키 60ml\n- 민트 잎 적당량\n- 파우더 슈거 1 tsp\n- 물 2 tsp"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 쌉쌀풀입\n"], ["tags", "---\n- 민트좋아\n- 청량한\n- 알콜가득\n"], ["information", "위스키 베이스 칵테일이며, 설탕과 민트 잎이 들어가 달콤하면서도 민트 향이 납니다!\n본래 민트 줄렙은 칵테일이 아닌 만들어 마시는 소화제의 일종이였으나, 1700년대 후반 미국 남부에서부터 칵테일로 발전하기 시작하게 되고, 이후 1938년 켄터키 더비의 공식 음료로 인정받게 되어 오늘날의 모습이 된 것이라고 합니다!"], ["created_at", "2021-06-12 11:32:50.469689"], ["updated_at", "2021-06-12 11:32:50.469689"], ["image", "mint_julep.jpg"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "좀비"], ["alcohol", "---\n- 4\n- 5\n"], ["sugar", "---\n- 3\n- 3\n"], ["recipe", "- 자메이칸 다크 럼 45ml\n- 골드 푸에르토리칸 럼 45ml\n- 데메라라 럼 30ml\n- 라임 주스 20ml\n- 팔레넘 15ml\n- Donn’s Mix* 15ml\n- 그레나딘 시럽 1 tsp\n- 비터(리큐르) 10방울\n- 퍼노드(리큐르) 6방울\n*Donn’s Mix: 노란 자몽과 시나몬 시럽 2:1"], ["base", "---\n- 럼\n"], ["flavor", "---\n- 트로피컬\n"], ["tags", "---\n- 과일좋아\n- 상큼한\n- 알콜가득\n"], ["information", "럼 베이스로, 티키 칵테일 계열에 속합니다! 맛은 여러 과일과 시럽이 들어가 새콤달콤하지만, 오버프루프 럼이 포함되어 있는 만큼 도수는 결코 낮지 않답니다!\n유래는 1934년대 돈 더 비치콤버(Donn The Beachcomber)에 의해 만들어진 레시피로, 알려진 이야기에 따르면 몇 개월에 걸쳐 만들어낸 칵테일이라고 합니다.\n과거 레시피를 훔치려는 시도가 많았던 탓인지, 재료를 간단하게 넣어 만드는 다른 칵테일과는 달리 좀비 칵테일은 럼이 무려 세 종류나 들어가는 드문 칵테일입니다!"], ["created_at", "2021-06-12 11:32:57.174187"], ["updated_at", "2021-06-12 11:32:57.174187"], ["image", "zombie.jpg"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "브랜디 알렉산더"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 브랜디 22.5ml\n- 크림드 카카오 (브라운) 22.5ml\n- 우유 22.5ml"], ["base", "---\n- 기타\n"], ["flavor", "---\n- 초코초코\n- 크리미한\n"], ["tags", "---\n- 부드러운\n- 달달한\n- 예쁜색감\n"], ["information", "브랜디 알렉산더는 브랜디의 강한맛과 카카오 브라운과 우유가 들어가 부드럽고 달달한 초코맛이 나는 칵테일입니다!\n브랜디 알렉산더는 19세기 중반에 영국국왕 에드워드 7세와 덴마크 왕국의 장녀 알렉산드라의 결혼을 기념하기 위해 만들어졌다고 합니다. 이 칵테일은 중독성이 강한 칵테일로 유명하다고 하네요!"], ["created_at", "2021-06-12 11:33:03.213541"], ["updated_at", "2021-06-12 11:33:03.213541"], ["image", "brandy_alexander.jpg"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "B & B"], ["alcohol", "---\n- 4\n- 5\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 꼬냑 40ml\n - 베네딕틴 D.O.M 20ml"], ["base", "---\n- 기타\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 쌉싸름한\n- 알콜가득\n- 달달한\n"], ["information", "브랜디의 B, 그리고 베네딕틴(Benedictine)의 B를 따서 B&B라는 이름의 칵테일입니다!\n베네딕틴은 1510년 노르망디의 베네딕트 수도원의 수도승인 돔 베르나르도 뱅셀리(Dom Bernardo Vincelli)가 처음으로 만든 술이라 합니다. 최초에는 수도원 주변의 가난한 어부와 농부들에게 약으로 처방하던 술이었다는데, 그 기적과도 같은 효험으로 영약주로 알려졌다 하네요.\n이 칵테일의 맛은 독특한 허브와도 같은 약초와 꿀의 단 맛, 브랜디의 풍미 등이 복잡하게 뒤섞여 독특한 맛을 냅니다. 베네딕틴의 효능에 대해서는 굉장히 다양한 이야기가 많은데, 공통적인 점이라면 피로회복, 정력 등의 건강주로서의 효능이 있다고 합니다!"], ["created_at", "2021-06-12 11:33:09.565396"], ["updated_at", "2021-06-12 11:33:09.565396"], ["image", "BB.jpg"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "핑크 레이디"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 드라이 진 45ml\n- 애플잭 브랜디 15ml\n- 레몬 주스 22.5ml\n- 슈가 시럽 12.5ml\n- 그레나딘 시럽 5ml\n- 달걀 흰자 15ml"], ["base", "---\n- 진\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 예쁜색감\n- 과일좋아\n- 새콤한\n"], ["information", "자크 스트라우브의 레시피 책에 1913년 처음 등장했습니다. 달걀 흰자가 들어가 푹신한 분위기를 느낄 수 있는 술입니다.\n1911년 브로드웨이의 코미디 뮤지컬 <The Pink Lady>로부터 이름을 얻었다고 하네요. 칵테일의 제작자는 기록되지 않았지만 미국 배우이자 실내 장식가인 Elsie de Wolfe로 설명되곤 합니다!\n칵테일의 달달해보이는 색감과는 다르게 생각만큼 달지는 않다는 사실!"], ["created_at", "2021-06-12 11:33:18.118787"], ["updated_at", "2021-06-12 11:33:18.118787"], ["image", "pink-lady.jpg"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "김렛"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 1\n- 1\n"], ["recipe", "- 드라이 진 75ml\n- 라임 주스 15ml\n- 설탕 시럽 15ml"], ["base", "---\n- 진\n"], ["flavor", "---\n- 시트러스\n"], ["tags", "---\n- 새콤한\n- 클래식한\n- 상큼한\n"], ["information", "'김렛'이라는 이름은 영국 해군 외과 전문 장교로 활약했던 토마스 김렛 경의 이름으로부터 온 것이라고 합니다. 김렛 경은 괴혈병 방지 목적으로 진에 신선한 라임 주스를 섞어 마시는 방법을 개발했는데 이게 유명해져서 칵테일 이름이 되었다고 합니다.\n김렛은 송곳이라는 뜻을 가지는데요, 이 칵테일은 라임 주스의 산미 탓에 찌르는 듯한 맛이 있기 때문에 이름과 잘 어울리는 칵테일이라고 볼 수 있겠죠? 1990년대에 보드카의 인기가 높아지면서 진 대신 보드카를 이용하는 경우도 많았다고 하네요!"], ["created_at", "2021-06-12 11:33:24.821590"], ["updated_at", "2021-06-12 11:33:24.821590"], ["image", "gimlet.png"]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "화이트 러시안"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 보드카 60ml\n- 커피 리큐르 30ml\n- 생크림 30ml"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 커피커피\n- 크리미한\n"], ["tags", "---\n- 부드러운\n- 쌉싸름한\n- 클래식한\n"], ["information", "화이트 러시안은 블랙 러시안에 크림을 첨가한 것으로서 블랙 러시안 보다는 부드럽고, 깔루아 밀크에 비해는 술 맛이 나는 칵테일입니다!\n유제품이 들어가기 때문에 소화불량을 주의하셔야 해요! 국내에서는 보통 우유를 사용하지만, 원래는 우유가 아닌 크림이 들어갑니다. 깔루아보다 단맛이 적은 커피 리큐르로 만드는 것이 더 고급 취급을 받기도 해요!"], ["created_at", "2021-06-12 11:33:29.856978"], ["updated_at", "2021-06-12 11:33:29.856978"], ["image", "white_russian.jpg"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:33:36 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.6ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "오르가즘"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 4\n- 4\n"], ["recipe", "- 커피 리큐르 30ml\n- 디사론노 아마레또 30ml\n- 베일리스 (아이리쉬 크림 리큐르) 30ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 커피커피\n- 초코초코\n- 크리미한\n"], ["tags", "---\n- 부드러운\n- 달달한\n- 예쁜색감\n"], ["information", "커피 맛, 아몬드 맛, 초콜릿 크림 맛, 이렇게 리큐르 3가지만 이용하여 만드는 칵테일입니다.\n여기에 보드카를 넣으면 '스크리밍 오르가즘'이라고 불립니다.\n이름만큼이나 강렬한 단맛과 부드러움을 가지고 있어요!"], ["created_at", "2021-06-12 11:33:48.355140"], ["updated_at", "2021-06-12 11:33:48.355140"], ["image", "orgasm.jpg"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:33:53 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.5ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 62ms (Views: 59.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "스푸모니"], ["alcohol", "---\n- 0\n- 1\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 캄파리 30ml\n- 자몽 주스 45ml\n- 토닉 워터 90ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 쌉싸름한\n- 탄산톡톡\n- 예쁜색감\n"], ["information", "잔잔한 알코올과 자몽의 상큼한 향을 가볍게 즐길 수 있는 칵테일입니다!\n스푸모니의 어원은 이탈리아어로 '거품을 일으킨다'는 뜻으로 토닉워터의 기포가 올라오는 것을 보고 이름이 붙여졌다고 하네요!"], ["created_at", "2021-06-12 11:33:59.331029"], ["updated_at", "2021-06-12 11:33:59.331029"], ["image", "spumoni.png"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "맨해튼"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 비번 위스키 45ml\n- 스위트 베르무트 22.5ml\n- 앙고스트라 비터 0.5ml"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 클래식한\n- 알콜가득\n- 쌉싸름한\n"], ["information", "'Valentine's Manual of New York에 의하면 맨해튼 칵테일은 60년대의 블랙이라는 사람에 의해 발명되었다고 합니다.\n역사가 오래된 만큼 굉장히 다양한 조리법과 변형을 가지고 있는 칵테일입니다! 식전주로 많이 추천되며 '칵테일의 여왕'이라는 별명도 가지고 있어요!"], ["created_at", "2021-06-12 11:34:06.913868"], ["updated_at", "2021-06-12 11:34:06.913868"], ["image", "manhattan.jpg"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.1ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "준 벅"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 멜론 리큐르 30ml\n- 바나나 리큐르 30ml\n- 코코넛 럼 30ml\n- 파인애플 주스 120ml\n- 라임 주스 30ml"], ["base", "---\n- 리큐르\n"], ["flavor", "---\n- 트로피컬\n"], ["tags", "---\n- 과일좋아\n- 예쁜색감\n- 달달한\n"], ["information", "한국 TGIF에 의하면 90년대 부산의 TGI Fridays에서 처음 만들어진 칵테일이라고 합니다.\n6월의 벌레라는 이름이지만 벌레의 이미지보다는 6월의 푸르름을 표현했다고 볼 수 있겠죠! 역사가 길지 않은 칵테일이지만 우리나라에서는 굉장히 쉽게 찾아볼 수 있습니다!"], ["created_at", "2021-06-12 11:34:13.115057"], ["updated_at", "2021-06-12 11:34:13.115057"], ["image", "june-bug.png"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "키스 오브 파이어"], ["alcohol", "---\n- 2\n- 3\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "-보드카 30ml\n- 슬로 진 15ml\n- 드라이 베르무트 15ml\n- 레몬주스 5ml\n- 설탕"], ["base", "---\n- 보드카\n"], ["flavor", "---\n- 베리베리\n"], ["tags", "---\n- 예쁜색감\n- 새콤한\n- 상큼한\n"], ["information", "1995년 일본에서 개최된 제5회 바텐더 경연대회에서 1위에 입상한 칵테일입니다! 당시 유행하던 노래의 제목에서 이름을 따왔다고 하네요.\n글라스 가장자리에 설탕을 묻히는 '리밍'이라는 장식법을 이용해서 칵테일의 붉은색과 잔 주변의 설탕이 눈이 내린 것마냥 아름다운 모습이랍니다.\n슬로 진의 은근한 단 맛이 있긴 하지만 베르무트의 떫은 맛이 어우러져 오묘한 맛을 냅니다!"], ["created_at", "2021-06-12 11:34:19.323568"], ["updated_at", "2021-06-12 11:34:19.323568"], ["image", "kiss-of-fire.jpg"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "갓 파더"], ["alcohol", "---\n- 3\n- 4\n"], ["sugar", "---\n- 2\n- 2\n"], ["recipe", "- 위스키 45ml\n- 디사론노 아마레또 22.5ml"], ["base", "---\n- 위스키\n"], ["flavor", "---\n- 쌉쌀풀잎\n"], ["tags", "---\n- 알콜가득\n- 클래식한\n- 달달한\n"], ["information", "1972년 영화인 <대부(갓파더)>에서 이름을 딴 칵테일입니다. 영화 속에서 비토 콜레오네(말론 브란도 역)가 이 칵테일을 마십니다.\n변형 칵테일이 여러 가지 존재하는데, 베이스를 보드카로 바꾸면 '갓 마더'로, 브랜디로 바꾸면 '프렌치 커넥션'으로 불립니다!"], ["created_at", "2021-06-12 11:34:26.583654"], ["updated_at", "2021-06-12 11:34:26.583654"], ["image", "god-father.jpg"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "cocktails" ("name", "alcohol", "sugar", "recipe", "base", "flavor", "tags", "information", "created_at", "updated_at", "image") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "상그리아"], ["alcohol", "---\n- 1\n- 2\n"], ["sugar", "---\n- 5\n- 5\n"], ["recipe", "- 레드 와인\n- 오렌지, 사과, 레몬 등 다양한 과일"], ["base", "---\n- 와인\n"], ["flavor", "---\n- 오렌지향\n- 베리베리\n"], ["tags", "---\n- 예쁜색감\n- 과일좋아\n- 상큼한\n"], ["information", "스페인과 포르투갈의 전통 음료 격인 상그리아는 스페인어의 'sangre(피)'라는 단어에서 유래된 붉은색 칵테일입니다. \n어떤 과일을 이용하냐에 따라 다양한 맛이 나는데 사과, 오렌지, 레몬 류의 새콤한 과일이 주로 사용됩니다!"], ["created_at", "2021-06-12 11:34:34.958701"], ["updated_at", "2021-06-12 11:34:34.958701"], ["image", "sangria.jpg"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/cocktails" for 182.224.69.16 at 2021-06-12 11:34:40 +0000
+Cannot render console from 182.224.69.16! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.6ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mCocktail Load (0.6ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
