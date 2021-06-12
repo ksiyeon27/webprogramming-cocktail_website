@@ -3,35 +3,66 @@
 <p>
  <strong>이름:</strong>
  <%= @cocktail.name %>
+ <span class='parent-likes'>
+  <span class="like_count" <%=@cocktail.id%>>
+   <%= @cocktail.get_likes.size %> &#128591
+  </span>
+  
+  <% if current_user %>
+  <a>
+   <% if current_user.voted_for? @cocktail %>
+    <div> <%= link_to like_cocktail_path(@cocktail, 'unlike'), class: "preached-btn", method: :put, remote: :true do %> Liked </div>
+   <% end%>
+   <% else %>
+    <div> <%= link_to like_cocktail_path(@cocktail, 'like'), class: "preach-btn", method: :put, remote: :true do %> Like </div>
+   <%end%>
+   <%end%>
+  </a>
+  <% end %>
+ </span>
 </p>
+
+<p>
+
+ <img src = "/<%= @cocktail.image %>"></img>
+</p>
+
 <p>
  <strong>도수: </strong>
- <%= @cocktail.alcohol %>
+ <%= @cocktail.alcohol[1] %>단계
 </p>
  <strong>레시피:</strong>
- <%= @cocktail.recipe %>
+  <%= auto_link(safe_join(@cocktail.recipe.split("\n"), tag(:br))) %> 
 </p>
 <p>
  <strong>베이스:</strong>
- <%= @cocktail.base %>
+ 
+ <% @cocktail.base.each do |base| %>
+     <span><%= base %></span>
+ <% end %>
+ 
+
 </p>
  <strong>맛:</strong>
- <%= @cocktail.flavor %>
+ <% @cocktail.flavor.each do |flavor| %>
+     <span><%= flavor %></span>
+ <% end %>
 </p>
 <p>
  <strong>태그:</strong>
- <%= @cocktail.tags %>
+ <% @cocktail.tags.each do |tag| %>
+     <span><%= tag %></span>
+ <% end %>
 </p>
- <strong>기타소개정보:</strong>
- <%= @cocktail.information %>
+ <strong>기타 소개 정보:</strong>
+  <%= auto_link(safe_join(@cocktail.information.split("\n"), tag(:br))) %> 
 </p>
 <p>
  <strong>당도:</strong>
- <%= @cocktail.sugar %>
+ <%= @cocktail.sugar[1] %>단계
 </p>
 
 <%= link_to '칵테일 리스트', cocktails_path %>
-<%= link_to '새 칵테일', new_cocktail_path %>
 <%= link_to '칵테일 검색', cocktails_search_path %>
 
 <h2>리뷰를 남겨주세요</h2>

@@ -14,5 +14,8 @@ Rails.application.routes.draw do
    
     resources :cocktails do
       resources :comments
-    end
+      member do
+        put "like" => "cocktails#like"
+      end
+  end
 end
