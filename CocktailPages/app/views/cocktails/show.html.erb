@@ -12,7 +12,7 @@
       <header>
         <nav class="navbar">
             <div class="nav_logo">
-                <a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>
+                <a href="/cocktails/search"><img class="cocktail-logo" src="/logo.svg"></a>
             </div>
 
             <ul class="nav_menu">
@@ -95,11 +95,13 @@
           </div>  <!--right-->
         </div>  <!--floor2-->
         
+      <!--
         <h2>리뷰를 남겨주세요</h2>
         <%= render 'comments/form' %>
         
         <h2><%= @cocktail.name %>에 대한 리뷰</h2>
         <%= render @cocktail.comments %>
+      -->
 
         <div class = "floor1">
           <div class = "username">
@@ -108,7 +110,8 @@
           </div>
           <div class = "text">
             <input type = "text" class = "myreview"></input>
-            <p>최고의 칵테일</p>
+            <%= render 'comments/form' %>
+            <p><%= render @cocktail.comments %></p>
 
             <button class = "review">등록</button>
             <button class = "delete">삭제</button>

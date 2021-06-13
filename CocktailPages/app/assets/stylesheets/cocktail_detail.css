@@ -37,8 +37,8 @@ nav .nav_menu li a:focus {
 }
 
 .main {
-  height: 1045px;
-  position: relative;
+  /*height: 1600px;*/
+  /*position: relative;*/
 }
 
 .line {
@@ -53,26 +53,30 @@ nav .nav_menu li a:focus {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 950px;
   margin-top: 15px;
   margin-bottom: 15px;
+  overflow: hidden;
+  height: auto;
 }
 
 .floor2 {
   width: 100%;
-  height: 600px;
+  overflow: hidden;
+  height: auto;
 }
 
 .left {
   width: 40%;
-  height: 600px;
+  overflow: hidden;
+  height: auto;
   position: relative;
   float: left;
 }
 
 .right {
   width: 60%;
-  height: 600px;
+  overflow: hidden;
+  height: auto;s
   position: relative;
   float: left;
 }
@@ -87,10 +91,10 @@ nav .nav_menu li a:focus {
 }
 
 .photo {
-  width: 70%;
-  margin-left: 5%;
+  width: 80%;
+  /*margin-left: 5%;*/
   margin-right: 5%;
-  height: 500px;
+  /*height: 500px;*/
   margin-top: 30px;
   margin-bottom: 10px;
   background-image: url("img/330_1.jpg");
@@ -170,7 +174,8 @@ nav .nav_menu li a:focus {
 .detail {
   width: 100%;
   text-align: left;
-  height: 250px;
+  overflow: hidden;
+  height: auto;
   font-size: 26px;
 }
 
@@ -263,9 +268,10 @@ nav .nav_menu li a:focus {
 .recipe-information {
   width: 100%;
   text-align: left;
-  height: 250px;
+  overflow: hidden;
+  height: auto;
   font-size: 26px;
-  line-height: 41px;
+  line-height: 36px;
 }
 .information{
   
@@ -284,7 +290,8 @@ nav .nav_menu li a:focus {
   margin-top: 30px;
   padding-bottom: 10px;
   padding-top: 0px;
-  height: 310px;
+  height: auto;
+  overflow: hidden;
   background-color: #ffdad0;
   border-radius: 15px;
   font-size: 20px;

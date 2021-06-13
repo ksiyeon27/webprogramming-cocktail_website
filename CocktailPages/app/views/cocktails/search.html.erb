@@ -39,28 +39,24 @@
 
 </head>
 <body>
-    <h1>Main Page - Cocktail Search</h1>
-    
-    
-    
     <header>
         <nav class="navbar">
             <div class="nav_logo">
-                <a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>
+                <%= link_to image_tag("/logo.svg"), cocktails_search_path, :class => "cocktail-logo" %>
             </div>
 
             <ul class="nav_menu">
-                <li><a href="main.html">오늘의 칵테일 검색하기</a></li>
-                <li><a href="mypage.html">마이 페이지</a></li>
+                <li><%= link_to '오늘의 칵테일 검색하기', cocktails_search_path %></li>
+                <li><%= link_to '마이페이지' %> </li>
                 <li><%= link_to '전체 리스트', cocktails_path %></li>
-                <li><a href="recommend_result.html">맞춤 칵테일</a></li>
-                <li><a href = "account/index">로그인</a></li>
+                <li><%= link_to '맞춤 칵테일' %></li>
+                <li><%= link_to '계정', account_index_path %></li>
             </ul>
         </nav>
     </header>
 
     <div class="search_title">
-        <span><img class="cock-logo" src="img/logo_crop.svg"></span>
+        <span><img class="cock-logo" src="/logo_crop.svg"></span>
         검색해보세요!</div>
     <div class="search_mainbg">
         <div class="search_info">
