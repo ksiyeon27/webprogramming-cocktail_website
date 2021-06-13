@@ -1,0 +1,28 @@
+<h1>Listing cocktails</h1>
+<%=# link_to '칵테일 검색', cocktails_search_path %>
+
+<table>
+    
+ <tr>
+     <th>2번~51번</th>
+     <th>이름</th>
+     <th>좋아요 수</th>
+     <th>당도</th>
+     <th>도수</th>
+
+
+
+ </tr>
+ 
+ <% @cocktails.each do |cocktail| %>
+ <tr>
+     <td><%=cocktail.id %></td>
+     <td><%=link_to cocktail.name, cocktail_path(cocktail) %></td>
+     <td><%=cocktail.cached_votes_total %></td>
+     <td><%=cocktail.sugar[0] %></td>
+     <td><%=cocktail.alcohol[1] %></td>
+
+ </tr>
+ <%end %>
+ 
+</table>

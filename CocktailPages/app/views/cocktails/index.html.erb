@@ -1,28 +1,91 @@
-<h1>Listing cocktails</h1>
-<%= link_to '칵테일 검색', cocktails_search_path %>
+   <header>
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
-<table>
-    
- <tr>
-     <th>2번~51번</th>
-     <th>이름</th>
-     <th>좋아요 수</th>
-     <th>당도</th>
-     <th>도수</th>
+   <script src="https://kit.fontawesome.com/fd324b66c7.js" crossorigin="anonymous"></script>
 
+    <nav class="navbar">
+            <div class="nav_logo">
+                <%= link_to image_tag("/logo.svg"), cocktails_search_path, :class => "cocktail-logo" %>
+            </div>
 
-
- </tr>
+            <ul class="nav_menu">
+                <li><%= link_to '오늘의 칵테일 검색하기', cocktails_search_path %></li>
+                <li><%= link_to '마이페이지' %> </li>
+                <li><%= link_to '전체 리스트', cocktails_path, style: "color:#F3553C" %></li>
+                <li><%= link_to '맞춤 칵테일' %></li>
+                <li><%= link_to '계정', account_index_path %></li>
+            </ul>
+        </nav>
+  </header>
+  
+  <main>
+   <h1 style="text-align: center; background-color: #F3553C; height: 130px">
+     <img src = "/logo.svg" width = "230px" height = "130px "></img>
+   </h1>
  
- <% @cocktails.each do |cocktail| %>
- <tr>
-     <td><%= cocktail.id %></td>
-     <td><%= link_to cocktail.name, cocktail_path(cocktail) %></td>
-     <td><%= cocktail.cached_votes_total %></td>
-     <td><%= cocktail.sugar[0] %></td>
-     <td><%= cocktail.alcohol[1] %></td>
+   <div class="album py-5 bg-light">
+    <div class="container">
+     
+     
+     <% @cocktails.in_groups_of(5, false).each do |cocktail_group| %>
+     <div class="row row-cols-5">
+      <% cocktail_group.each do |cocktail| %>
+       <div class="col">
+        <div class="card shadow-sm" style="border-radius: 12px">
+         <img src="/<%= cocktail.image%>" width="239px" height="239px"></img>
+         <title>cocktail.name</title>
+         <rect width="100%" height="100%" fill="#55595c"/>
+         
+         <div class="card-body">
+          
+          <div class="d-flex justify-content-between align-items-center">
+           <div class="btn-group">
+            
+            <p>
+             <p class="card-text" style="color:  #101010;font-size:22px;">
+              <strong><%= cocktail.name%></strong>
+             </p>
+            </p>
+            
+            </div>
+             <small class="text-muted" style=" font-size:13px;">
+              <i class="fas fa-heart" style="color: #F3553C"></i>
+                <%= cocktail.cached_votes_total %></small>
+          </div>
+          
+          <p class="card-text" style="color:#F3553C; font-size:13px;white-space:nowrap; display:inline; "><br>당도
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    &nbsp;&nbsp; &nbsp;도수
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    <i class="fas fa-circle" style="color: #F3553C; font-size:9px"></i>
+                    <i class="far fa-circle" style="color: #FFDAD0 ; font-size:9px"></i>
+                    <i class="far fa-circle" style="color: #FFDAD0 ; font-size:9px"></i>
+                    <i class="far fa-circle" style="color: #FFDAD0 ; font-size:9px"></i>
+                    <br><br>
 
- </tr>
- <% end %>
- 
-</table>
+                    <div class="col text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary pc-btn" style="font-size:12px;  width:110px ; border-radius: 12px;">
+                          <%= link_to '자세히 보기', cocktail_path(cocktail), class:"detail" %>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+              </div>
+                <p><br><br></p>
+                <% end %>
+                </div>
+                
+            </div>
+  </main>
+  <footer>
+            <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
+  </footer>
