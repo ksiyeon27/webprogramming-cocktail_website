@@ -1,9 +1,9 @@
 import $ from 'jQuery';
 
-$('.preached-btn').on('ajax:success', function(){
-    $(this).parent().parent().find('.like_count').html('<%= @cocktail.get_likes.size %> &#128591');$(this).closest('.preached-btn').html('Like');
+$('.hearted-btn').on('ajax:success', function(){
+    $(this).parent().parent().find('.like_count').html('<%= @cocktail.get_likes.size %> &#129505');$(this).closest('.hearted-btn').html('Like');
 });
 
-$('.preach-btn').on('ajax:success', function(){
-    $(this).parent().parent().find('.like_count').html('<%= @cocktail.get_likes.size %> &#128591');$(this).closest('.preach-btn').html('Liked');
+$('.heart-btn').on('ajax:success', function(){
+    $(this).parent().parent().find('.like_count').html('<%= @cocktail.get_likes.size %> &#129505');$(this).closest('.heart-btn').html('Liked');
 });

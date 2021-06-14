@@ -11,6 +11,8 @@ class CocktailsController < ApplicationController
     end
     
     def search ## 메인 검색 페이지
+        @user=current_user
+        @cocktails=@user.find_voted_items
     end
     
     def create ## 쿼리문 대신

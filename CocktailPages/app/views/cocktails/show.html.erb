@@ -5,16 +5,16 @@
  <%= @cocktail.name %>
  <span class='parent-likes'>
   <span class="like_count" <%=@cocktail.id%>>
-   <%= @cocktail.get_likes.size %> &#128591
+   <%= @cocktail.get_likes.size %> &#129505
   </span>
   
   <% if current_user %>
   <a>
    <% if current_user.voted_for? @cocktail %>
-    <div> <%= link_to like_cocktail_path(@cocktail, 'unlike'), class: "preached-btn", method: :put, remote: :true do %> Liked </div>
+    <div> <%= link_to like_cocktail_path(@cocktail, 'unlike'), class: "hearted-btn", method: :put, remote: :true do %> Liked </div>
    <% end%>
    <% else %>
-    <div> <%= link_to like_cocktail_path(@cocktail, 'like'), class: "preach-btn", method: :put, remote: :true do %> Like </div>
+    <div> <%= link_to like_cocktail_path(@cocktail, 'like'), class: "heart-btn", method: :put, remote: :true do %> Like </div>
    <%end%>
    <%end%>
   </a>
