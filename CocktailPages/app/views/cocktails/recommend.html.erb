@@ -1,4 +1,4 @@
-<h1>맞춤 칵테일 페이지</h1>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,85 +16,425 @@
       <header>
         <nav class="navbar">
             <div class="nav_logo">
-                <a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>
+              
+              <%= link_to cocktails_search_path do %>
+                 <%= image_tag("chaelynn/logo.svg") %>
+              <% end %>
+              
+              
+                <!--<a href="main.html"><img class="cocktail-logo" src="img/logo.svg"></a>-->
+                <!--<%= image_tag("chaelynn/logo.svg") %>-->
             </div>
 
             <ul class="nav_menu">
                 <li><a href="main.html">오늘의 칵테일 검색하기</a></li>
                 <li><a href="mypage.html">마이 페이지</a></li>
                 <li><a href="cocktail_list.html">전체 리스트</a></li>
-                <li><a href="recommend_result.html" style="color: #F3553C;">맞춤 칵테일</a></li>
+                <li><a href="recommend_result.html">맞춤 칵테일</a></li>
                 <li><a href="login.html">로그인</a></li>
             </ul>
         </nav>
     </header>
+    
+    <!--input으로 받아오기!-->
+    
+    
+    <!--@user.find_voted_items.map(&:id)-->
+<% like_ids = [38] %>
+
+<% sugar_arr_1 = Array.new(0)
+sugar_arr_2 = Array.new(0)
+alcohol_arr_1 = Array.new(0)
+alcohol_arr_2 = Array.new(0)
+base_arr = Array.new(0)
+taste_arr = Array.new(0)
+tag_arr = Array.new(0) %>
+
+<% 
+for i in 0..(like_ids.size-1) do
+  @cocktail_tmp = Cocktail.find(like_ids.at(i))
+  sugar_arr_1.push(@cocktail_tmp.sugar.at(0))
+  sugar_arr_2.push(@cocktail_tmp.sugar.at(1))
+  alcohol_arr_1.push(@cocktail_tmp.alcohol.at(0))
+  alcohol_arr_2.push(@cocktail_tmp.alcohol.at(1))
+end
+ 
+ sugar_arr = Array.new(0)
+ alcohol_arr = Array.new(0)
+ sugar_arr.push(sugar_arr_1.min)
+ sugar_arr.push(sugar_arr_2.max)
+ alcohol_arr.push(alcohol_arr_1.min)
+ alcohol_arr.push(alcohol_arr_2.max)
+ 
+ for i in 0..(like_ids.size-1) do
+   @cocktail_tmp = Cocktail.find(like_ids.at(i))
+   
+   for k in 0..(@cocktail_tmp.base.size-1) do
+     base_arr.push(@cocktail_tmp.base.at(k))
+   end
+   
+   for l in 0..(@cocktail_tmp.flavor.size-1) do
+     taste_arr.push(@cocktail_tmp.flavor.at(l))
+   end
+   
+   for m in 0..(@cocktail_tmp.tags.size-1) do
+     tag_arr.push(@cocktail_tmp.tags.at(m))
+   end
+   
+ end
+
+ base_arr = base_arr.uniq
+ taste_arr = taste_arr.uniq
+ tag_arr = tag_arr.uniq
+
+%>
+
+<!--<%= alcohol_arr %>-->
+<!--<%= sugar_arr %>-->
+<!--<%= taste_arr %>-->
+<!--<%= base_arr %>-->
+<!--<%= tag_arr %>-->
 
 
-    <div class = "main">
-          
-          <div class = "line"><div class = "cock2"><p class = "text">내 취향저격 칵테일을</p> <img class = "cock" src = "img/logo_crop.svg"/></div></div>
+
+
+
+<% db_sugar = Array.new(0)
+db_alcohol = Array.new(0)
+db_base = Array.new(0)
+db_taste = Array.new(0)
+db_tag = Array.new(0) %>
+
+
+<% for i in 0..49 do
+  
+  @cocktail_tmp = Cocktail.find(i+2)
+  db_sugar.push(@cocktail_tmp.sugar)
+  db_alcohol.push(@cocktail_tmp.alcohol)
+  db_base.push(@cocktail_tmp.base)
+  db_taste.push(@cocktail_tmp.flavor)
+  db_tag.push(@cocktail_tmp.tags)
+end %>
+
+<!--<%= db_tag.at(48).at(0) %>-->
+<!--<%= db_tag.at(48).at(1) %>-->
+<!--<%= db_tag.at(48).at(2) %>-->
+
+
+
+
+<%
+#도수 기준을 만족하는 칵테일들의 id를 원소로 갖는 어래이
+alcohol_satisfied = Array.new(0)
+#당도 기준을 만족하는 칵테일들의 id를 원소로 갖는 어래이
+sugar_satisfied = Array.new(0)
+#맛 기준을 만족하는 칵테일들의 id를 원소로 갖는 어래이
+taste_satisfied = Array.new(0)
+#베이스 기준을 만족하는 칵테일들의 id를 원소로 갖는 어래이
+base_satisfied = Array.new(0)
+#태그 기준을 만족하는 칵테일들의 id를 원소로 갖는 어래이
+tag_satisfied = Array.new(0)
+
+
+alcohol_0 = alcohol_arr.at(0)
+alcohol_1 = alcohol_arr.at(1)
+
+i=0
+for i in 0..49 do
+  if (db_alcohol.at(i).at(0)>= alcohol_0) && (db_alcohol.at(i).at(1)<= alcohol_1)
+    alcohol_satisfied.push(i)
+  end
+end
+
+#2 당도 범위에 맞는 칵테일을 찾는다.
+sugar_0 = sugar_arr.at(0)
+sugar_1 = sugar_arr.at(1)
+for i in 0..49 do
+  if (db_sugar.at(i).at(0)>= sugar_0) && (db_sugar.at(i).at(1)<= sugar_1)
+    sugar_satisfied.push(i)
+  end
+end
+
+#3 맛 범위에 맞는 칵테일을 찾는다.
+# boolean
+taste_0 = (taste_arr.at(0) == 0)
+# //상관없어요 선택한 경우 넘어가기
+if !taste_0
+  for i in 0..(taste_arr.size-1) do
+    tmp_taste = taste_arr.at(i)
+    for k in 0..49 do
+      if db_taste.at(k).include?(tmp_taste)
+        taste_satisfied.push(k)
+      end
+    end
+  end
+end
+
+
+#4 베이스 범위에 맞는 칵테일을 찾는다.
+# boolean
+base_0 = (base_arr.at(0) == 0)
+# //상관없어요 선택한 경우 넘어가기
+if !base_0
+  for i in 0..(base_arr.size-1) do
+    tmp_base = base_arr.at(i)
+  
+    for k in 0..49 do
+      if db_base.at(k).include?(tmp_base)
+        base_satisfied.push(k)
+      end
+    end
+  end
+end
+
+#5 태그 범위에 맞는 칵테일을 찾는다.
+# boolean
+tag_0 = (tag_arr.at(0) == 0)
+# //태그 미선택 경우 넘어가기
+if !tag_0
+  for i in 0..(tag_arr.size-1) do
+    tmp_tag = tag_arr.at(i)
+    for k in 0..49 do
+      if db_tag.at(k).include?(tmp_tag)
+        tag_satisfied.push(k)
+      end
+    end
+  end
+end
+%>
+
+<!--<%= tag_satisfied %>-->
+<!--<%= base_satisfied %>-->
+<!--<%= taste_satisfied %>-->
+<!--<%= sugar_satisfied %>-->
+<!--<%= alcohol_satisfied%>-->
+
+<%
+#최종적으로 return 할 칵테일들의 id를 원소로 갖는 어래이
+rslt_arr = Array.new(0)
+#임시로 만들어둔 rslt_arr가 될 가능성이 있는 어래이   
+tmp_arr = Array.new(0)
+
+#검색 결과가 없는 경우
+if alcohol_satisfied.size == 0
+  
+elsif (0<alcohol_satisfied.size) && (alcohol_satisfied.size <=3)
+  rslt_arr = alcohol_satisfied
+else
+  for i in 0..(alcohol_satisfied.size-1) do
+    if sugar_satisfied.include?(alcohol_satisfied.at(i))
+      tmp_arr.push(i)
+    end
+  end
+
+  if tmp_arr.size == 0
+    # 1,2번 둘다 만족하는 칵테일이 없는 경우
+    # 1번 만족하는 칵테일에서 임의로 2개 선정
+    rslt_arr.push(alcohol_satisfied.at(0))
+    rslt_arr.push(alcohol_satisfied.at(1))
+    # return rslt_arr
+  elsif tmp_arr.size<=3
+    # 1,2번 둘다 만족하는 칵테일이 3개 이하인 경우
+    rslt_arr = tmp_arr
+    # return rslt_arr
+  else
+    # 1,2번 둘다 만족하는 칵테일이 4개 이상인 경우
+    # tmp_arr.size >= 3
+    tmp_arr_2 = Array.new(0)
+  # 맛, 베이스, 태그 하나라도 만족하면 우선 검색 결과에 넣었는데, 
+  # 이는 실제로 코드 돌려보며 수정해야 할 것 같습니다!
+    for i in 0..(tmp_arr.size-1) do
+      if taste_satisfied.include?(tmp_arr.at(i))
+        tmp_arr_2.push(i)
+      end
+      if base_satisfied.include?(tmp_arr.at(i))
+        tmp_arr_2.push(i)
+      end
+      if tag_satisfied.include?(tmp_arr.at(i))
+        tmp_arr_2.push(i)
+      end
+    end
+    tmp_arr_2 = tmp_arr_2.uniq
+
+    if tmp_arr_2.size == 0
+      # 3번째 기준까지 만족하는 칵테일 없는 경우
+      rslt_arr.push(tmp_arr.at(0))
+      rslt_arr.push(tmp_arr.at(1))
+      rslt_arr.push(tmp_arr.at(2))
+      # return rslt_arr
+    elsif tmp_arr_2.size <= 3
+      rslt_arr = tmp_arr_2
+      # return rslt_arr
+    else
+      # 3번째 기준까지 만족하는 칵테일 3개 이상인 경우
+      rslt_arr.push(tmp_arr_2.at(0))
+      rslt_arr.push(tmp_arr_2.at(1))
+      rslt_arr.push(tmp_arr_2.at(2))
+      # return rslt_arr
+    end
+  end
+
+end
+%>
+
+
+
+
+<!--<%= rslt_arr %>-->
+<% rslt_arr = rslt_arr.uniq %>
+
+
+<!--<% if rslt_arr.size == 0%>-->
+<!-- <h3>"검색 결과가 없습니다!"</h3>-->
+<!--<% elsif rslt_arr.size == 1 %>-->
+<!-- <h3>"검색 결과가 하나!"</h3>-->
+<!-- <% @rslt_coctail =  Cocktail.find(rslt_arr.at(0) + 2) %>-->
+<!-- <%= @rslt_coctail.name %>-->
+<!-- <%= @rslt_coctail.tags %>-->
+<!-- <h5>"자세히보기"</h5>-->
+<!--<% elsif rslt_arr.size == 2 %>-->
+<!-- <h3>"검색 결과가 둘!"</h3>-->
+<!-- <% @rslt_coctail =  Cocktail.find(rslt_arr.at(0) + 2) %>-->
+<!-- <%= @rslt_coctail.name %>-->
+<!-- <%= @rslt_coctail.tags %>-->
+<!-- <h5>"자세히보기"</h5>-->
+<!-- <% @rslt_coctail =  Cocktail.find(rslt_arr.at(1) + 2) %>-->
+<!-- <%= @rslt_coctail.name %>-->
+<!-- <%= @rslt_coctail.tags %>-->
+<!-- <h5>"자세히보기"</h5>-->
+ 
+<!--<% else %>-->
+<!-- <h3>"검색 결과가 셋!"</h3>-->
+<!-- <% @rslt_coctail =  Cocktail.find(rslt_arr.at(0) + 2) %>-->
+<!-- <%= @rslt_coctail.name %>-->
+<!-- <%= @rslt_coctail.tags %>-->
+<!-- <h5>"자세히보기"</h5>-->
+<!-- <% @rslt_coctail =  Cocktail.find(rslt_arr.at(1) + 2) %>-->
+<!-- <%= @rslt_coctail.name %>-->
+<!-- <%= @rslt_coctail.tags %>-->
+<!-- <h5>"자세히보기"</h5>-->
+<!-- <% @rslt_coctail =  Cocktail.find(rslt_arr.at(2) + 2) %>-->
+<!-- <%= @rslt_coctail.name %>-->
+<!-- <%= @rslt_coctail.tags %>-->
+<!-- <h5>"자세히보기"</h5>-->
+<!--<% end %>-->
+
+
+
+
+
+
+
+<!--<%= db_taste.at(49)%>-->
+
+<!--<% @cocktail = Cocktail.find(4) %>-->
+<!--<%= @cocktail.name %>-->
+<!--<%= @cocktail.sugar %>-->
+<!--<%= @cocktail.alcohol %>-->
+<!--<%= @cocktail.tags %>-->
+<!--<%= @cocktail.flavor %>-->
+<!--<%= @cocktail.base%>-->
+
+<!--<% sugar_arr = Array.new(0) %>-->
+<!--<% sugar_arr = @cocktail.sugar %>-->
+<!--<%= sugar_arr %>-->
+
+
+<div class = "main">
+          <div class = "line">
+            <!--<div class = "cock1">-->
+              <p class = "text">내 취향저격 칵테일을 </p><span><%= image_tag("chaelynn/c.png") %></span>
+            <!--</div>-->
+          </div>
           
           <div class = "cocktail">
-             <div class = "top">
-               <p>모히토, 스크류 드라이버, 마티니를 좋아하는 당신을 위해</p>
+            <div class = "top">
+              <p>
+               
+              <% for i in 0..(like_ids.size-2) do
+                    @cocktail_tmp = Cocktail.find(like_ids.at(i)) %>
+                    <%=  @cocktail_tmp.name %>,
+                    
+              <%   end %>
+              <% @cocktail_tmp = Cocktail.find(like_ids.at(like_ids.size-1)) %>
+              <%=  @cocktail_tmp.name %>
+                  
+               를 좋아하는 당신을 위해</p>
+             </div>
+             
+
              </div>
              <div class = "section">
                 <div class = "photo">
-                <div id = "photo1"></div>
+                 <% @rslt_coctail =  Cocktail.find(rslt_arr.at(0) + 2) %>
+                
+                  <div id = "photo1">
+                  <img src = "/<%= @rslt_coctail.image %>">
+                  </img>
+                  </div>
+                
                 </div>
-                <div class = "name">피치크러시</div>
+                
+                
+                
+                <div class = "name"> <%= @rslt_coctail.name %></div>
                 <div class = "tag">
-                 <span class = "tag1">#추천많은</span>
-                 <span class = "tag2">#달달한</span>
-                 <span class = "tag3">#음료같은</span>
+                 <span class = "tag1"># <%= @rslt_coctail.tags.at(0) %></span>
+                 <span class = "tag2">#<%= @rslt_coctail.tags.at(1) %></span>
+                 <span class = "tag3">#<%= @rslt_coctail.tags.at(2) %></span>
                 </div>
                 <div class = "bottom">
-                 <a href = "cocktail_detail.html">
-                   <button class = "button">자세히 보기</button>
-                </a>
+                 
+                <%= link_to cocktail_path(@rslt_coctail) do %>
+                  <button class = "button">자세히 보기</button>
+                <% end %>
+                
+                
+      
                 </div>
              </div>
              <div class = "section">
                <div class = "photo">
-                <div id = "photo2"></div>
+                 <% @rslt_coctail =  Cocktail.find(rslt_arr.at(1) + 2) %>
+                <div id = "photo2"> <img src = "/<%= @rslt_coctail.image %>"></div>
                 </div>
-                <div class = "name">코스모폴리탄</div>
+                
+                <div class = "name"> <%= @rslt_coctail.name %></div>
                 <div class = "tag">
-                 <span class = "tag1">#독한</span>
-                 <span class = "tag2">#비싼</span>
-                 <span class = "tag3">#재밌는</span>
+                 <span class = "tag1"># <%= @rslt_coctail.tags.at(0) %></span>
+                 <span class = "tag2">#<%= @rslt_coctail.tags.at(1) %></span>
+                 <span class = "tag3">#<%= @rslt_coctail.tags.at(2) %></span>
                 </div>
                 <div class = "bottom">
-                 <a href = "cocktail_detail.html">
-                   <button class = "button">자세히 보기</button>
-                </a>
+                 <%= link_to cocktail_path(@rslt_coctail) do %>
+                  <button class = "button">자세히 보기</button>
+                <% end %>
                 </div>
              </div>
              <div class = "section">
                <div class = "photo">
-                <div id = "photo3"></div>
+                  <% @rslt_coctail =  Cocktail.find(rslt_arr.at(2) + 2) %>
+                <div id = "photo3"> <img src = "/<%= @rslt_coctail.image %>"></div>
                 </div>
-                <div class = "name">깔루아밀크</div>
+               
+                <div class = "name"> <%= @rslt_coctail.name %></div>
                 <div class = "tag">
-                 <span class = "tag1">#청량한</span>
-                 <span class = "tag2">#트로피컬한</span>
-                 <span class = "tag3">#맛있는</span>
+                 <span class = "tag1"># <%= @rslt_coctail.tags.at(0) %></span>
+                 <span class = "tag2">#<%= @rslt_coctail.tags.at(1) %></span>
+                 <span class = "tag3">#<%= @rslt_coctail.tags.at(2) %></span>
                 </div>
                 <div class = "bottom">
-                 <a href = "cocktail_detail.html">
-                   <button class = "button">자세히 보기</button>
-                </a>
+                 <%= link_to cocktail_path(@rslt_coctail) do %>
+                  <button class = "button">자세히 보기</button>
+                <% end %>
                 </div>
              </div>
           </div>
           </div>
-
-
-
-
-
+          
+          
+          
+          
     <footer>
         <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
     </footer>
-</body>
-</html>
