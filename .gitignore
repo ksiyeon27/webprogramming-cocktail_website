@@ -128,4 +128,13 @@ build-iPhoneSimulator/
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
 
+
+# add
+
+/CocktailPages/db/development.sqlite3
+/CocktailPages/db/test.sqlite3
+/CocktailPages/log/development.log
+
+# done 
+
 # End of https://www.toptal.com/developers/gitignore/api/ruby,rails,cloud9
