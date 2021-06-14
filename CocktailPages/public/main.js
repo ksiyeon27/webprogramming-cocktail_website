@@ -8,6 +8,16 @@
 // });
 // $(".circle1").click(function() {$(".circle1").toggleClass("bg-color"); 
 // $(".circle1>img").toggleClass("main-filter");});
+function tagcheckedStyle(e) {
+    if(e.target.checked){
+        e.target.parentElement.style.backgroundColor = '#ffdad0';
+        e.target.nextElementSibling.style.color = '#f3553c';
+    }else{
+         e.target.parentElement.style.backgroundColor = 'white';
+         e.target.nextElementSibling.style.color = 'black';
+
+    }
+ }
 function checkedStyle(e) {
     if(e.target.checked){
         e.target.previousElementSibling.style.backgroundColor = '#ffdad0';
