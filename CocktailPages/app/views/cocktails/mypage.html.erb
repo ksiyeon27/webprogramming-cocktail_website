@@ -1,0 +1,28 @@
+   <header>
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+   <script src="https://kit.fontawesome.com/fd324b66c7.js" crossorigin="anonymous"></script>
+
+    <nav class="navbar">
+            <div class="nav_logo">
+                <%= link_to image_tag("/logo.svg"), cocktails_search_path, :class => "cocktail-logo" %>
+            </div>
+
+            <ul class="nav_menu">
+                <li><%= link_to '오늘의 칵테일 검색하기', cocktails_search_path %></li>
+                <li><%= link_to '마이페이지' %> </li>
+                <li><%= link_to '전체 리스트', cocktails_path, style: "color:#F3553C" %></li>
+                <li><%= link_to '맞춤 칵테일' %></li>
+                <li><%= link_to '계정', account_index_path %></li>
+            </ul>
+        </nav>
+  </header>
+  
+  <main>
+      
+  </main>
+  
+   <footer>
+            <div class="creators">만든 이들: 고민정, 김시연, 김채린, 서예빈, 홍노아</div>
+  </footer>
