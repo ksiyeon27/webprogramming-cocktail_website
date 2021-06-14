@@ -131,9 +131,9 @@ build-iPhoneSimulator/
 
 # add
 
-/db/development.sqlite3
-/db/test.sqlite3
-/log/development.log
+/CocktailPages/db/development.sqlite3
+/CocktailPages/db/test.sqlite3
+/CocktailPages/log/development.log
 
 # done 
 
