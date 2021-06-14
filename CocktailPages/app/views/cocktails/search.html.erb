@@ -103,7 +103,7 @@
             <div class="select select-base">
                 <div class="title-wrapper">
                     <h1>베이스</h1>
-                    <div class="all-btn1"><input type="checkbox" name="base[]" value=0 id="base_id_0" onclick="allCheck(event)"><label> 다 괜찮아요!</label></div>
+                    <div class="all-btn1"><input type="checkbox" name="base[]" value="all" id="base_id_0" onclick="allCheck(event); allcheckedStyle(event); BasemodifiedbyallStyle(event);"><label> 다 괜찮아요!</label></div>
                 </div>
                 
 
@@ -114,38 +114,38 @@
                     <!--<li><div class="circle1"><label><input type="checkbox" name="base[]" value="1"><img class="-btn" src="<%= asset_path 'cocktail_components/base_vodka.svg' %>"> 보드카</label></div></li>-->
                     
                     <li><div class="circle1"><img class="vodka-btn" src="<%= asset_path 'cocktail_components/base_vodka.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=1 id="base_id_1" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="보드카" id="base_id_1" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_1">보드카</label>
                     </li>
                     <li><div class="circle2"><img class="gin-btn" src="<%= asset_path 'cocktail_components/base_gin.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=2 id="base_id_2" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="진" id="base_id_2" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_2">&nbsp&nbsp진</label>
                     </li>
                     <li><div class="circle3"><img class="tequila-btn" src="<%= asset_path 'cocktail_components/base_tequila.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=3 id="base_id_3" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="데킬라" id="base_id_3" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_3">데킬라</label>
                     </li>
                     <li><div class="circle4"><img class="rum-btn" src="<%= asset_path 'cocktail_components/base_rum.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=4 id="base_id_4" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="럼" id="base_id_4" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_4">&nbsp&nbsp럼</label>
                     </li>
                 </ul>
     
                 <ul class="base-secondline">
                     <li><div class="circle5"><img class="whiskey-btn" src="<%= asset_path 'cocktail_components/base_whiskey.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=5 id="base_id_5" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="위스키" id="base_id_5" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_5">위스키</label>
                     </li>
                     <li><div class="circle6"><img class="wine-btn" src="<%= asset_path 'cocktail_components/base_wine.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=6 id="base_id_6" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="와인" id="base_id_6" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_6">&nbsp와인</label>
                     </li>
                     <li><div class="circle7"><img class="liqueur-btn" src="<%= asset_path 'cocktail_components/base_liqueur.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=7 id="base_id_7" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="리큐르" id="base_id_7" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_7">리큐르</label>
                     </li>
                     <li><div class="circle8"><img class="etc-btn" src="<%= asset_path 'cocktail_components/base_etc.svg' %>"></div>
-                        <input class="base_list" type="checkbox" name="base[]" value=8 id="base_id_8" onclick="checkAllList(event); checkedStyle(event);">
+                        <input class="base_list" type="checkbox" name="base[]" value="기타" id="base_id_8" onclick="checkAllList(event); BasecheckedStyle(event);">
                         <label for="base_id_8">&nbsp기타</label>
                     </li>
                 </ul>
@@ -154,7 +154,7 @@
             <div class="select select-flavor">
                 <div class="title-wrapper">
                     <h1>맛</h1>
-                    <div class="all-btn2"><input type="checkbox" name="flavor[]" value=0 id="flavor_id_0" onclick="allCheckFlavor(event)"><label> 다 괜찮아요!</label></div>
+                    <div class="all-btn2"><input type="checkbox" name="flavor[]" value="all" id="flavor_id_0" onclick="allCheckFlavor(event); allcheckedStyle(event);  FlavormodifiedbyallStyle(event);"><label> 다 괜찮아요!</label></div>
                 </div>
                 
                 
@@ -165,38 +165,38 @@
     
                 <ul class="flavor-firstline">
                     <li><div class="circle9"><img class="leaf-btn" src="<%= asset_path 'cocktail_components/flavor_leaf.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=1 id="flavor_id_1" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="풋풋풀잎" id="flavor_id_1" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_1">풋풋풀잎</label>
                     </li>
                     <li><div class="circle10"><img class="berry-btn" src="<%= asset_path 'cocktail_components/flavor_berry.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=2 id="flavor_id_2" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="베리베리" id="flavor_id_2" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_2">베리베리</label>
                     </li>
                     <li><div class="circle11"><img class="orange-btn" src="<%= asset_path 'cocktail_components/flavor_orange.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=3 id="flavor_id_3" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="오렌지향" id="flavor_id_3" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_3">오렌지향</label>
                     </li>
                     <li><div class="circle12"><img class="citrus-btn" src="<%= asset_path 'cocktail_components/flavor_citrus.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=4 id="flavor_id_4" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="시트러스" id="flavor_id_4" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_4">시트러스</label>
                     </li>
                 </ul>
     
                 <ul class="flavor-secondline">
                     <li><div class="circle13"><img class="choco-btn" src="<%= asset_path 'cocktail_components/flavor_choco.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=5 id="flavor_id_5" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="초코초코" id="flavor_id_5" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_5">초코초코</label>
                     </li>
                     <li><div class="circle14"><img class="coffee-btn" src="<%= asset_path 'cocktail_components/flavor_coffee.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=6 id="flavor_id_6" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="커피커피" id="flavor_id_6" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_6">커피커피</label>
                     </li>
                     <li><div class="circle15"><img class="creamy-btn" src="<%= asset_path 'cocktail_components/flavor_creamy.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=7 id="flavor_id_7" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="크리미한" id="flavor_id_7" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_7">크리미한</label>
                     </li>
                     <li><div class="circle16"><img class="tropical-btn" src="<%= asset_path 'cocktail_components/flavor_tropical.svg' %>"></div>
-                        <input class="flavor_list" type="checkbox" name="flavor[]" value=8 id="flavor_id_8" onclick="checkAllListFlavor(event); checkedStyle(event);">
+                        <input class="flavor_list" type="checkbox" name="flavor[]" value="트로피컬" id="flavor_id_8" onclick="checkAllListFlavor(event); FlavorcheckedStyle(event);">
                         <label for="flavor_id_8">트로피컬</label>
                     </li>
                 </ul>
@@ -209,31 +209,31 @@
                 <div class="tags-name">
                     <ul class="tag-firstline">
                         <li><div class="tag-btn 1">
-                            <input type="checkbox" name="tag[]" value=1 id="tag_id_1" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="상큼한" id="tag_id_1" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_1"># 상큼한</label>
                         </div></li>
                         <li><div class="tag-btn 2">
-                            <input type="checkbox" name="tag[]" value=2 id="tag_id_2" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="새콤한" id="tag_id_2" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_2"># 새콤한</label>
                         </div></li>
                         <li><div class="tag-btn 3">
-                            <input type="checkbox" name="tag[]" value=3 id="tag_id_3" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="알콜가득" id="tag_id_3" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_3"># 알콜가득</label>
                         </div></li>    
                         <li><div class="tag-btn 4">
-                            <input type="checkbox" name="tag[]" value=4 id="tag_id_4" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="민트좋아" id="tag_id_4" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_4"># 민트좋아</label> 
                         </div></li>
                         <li><div class="tag-btn 5">
-                            <input type="checkbox" name="tag[]" value=5 id="tag_id_5" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="과일좋아" id="tag_id_5" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_5"># 과일좋아</label>
                         </div></li>
                         <li><div class="tag-btn 6">
-                            <input type="checkbox" name="tag[]" value=6 id="tag_id_6" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="부드러운" id="tag_id_6" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_6"># 부드러운</label>
                         </div></li> 
                         <li><div class="tag-btn 7">
-                            <input type="checkbox" name="tag[]" value=7 id="tag_id_7" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="클래식한" id="tag_id_7" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_7"># 클래식한</label>
                         </div></li>
                         
@@ -241,31 +241,31 @@
         
                     <ul class="tag-secondline">
                         <li><div class="tag-btn 8">
-                            <input type="checkbox" name="tag[]" value=8 id="tag_id_8" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="청량한" id="tag_id_8" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_8"># 청량한</label>
                         </div></li>
                         <li><div class="tag-btn 9">
-                            <input type="checkbox" name="tag[]" value=9 id="tag_id_9" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="달달한" id="tag_id_9" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_9"># 달달한</label>
                         </div></li>
                         <li><div class="tag-btn 10">
-                            <input type="checkbox" name="tag[]" value=10 id="tag_id_10" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="예쁜색감" id="tag_id_10" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_10"># 예쁜색감</label>
                         </div></li>    
                         <li><div class="tag-btn 11">
-                            <input type="checkbox" name="tag[]" value=11 id="tag_id_11" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="탄산톡톡" id="tag_id_11" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_11"># 탄산톡톡</label>
                         </div></li>
                         <li><div class="tag-btn 12">
-                            <input type="checkbox" name="tag[]" value=12 id="tag_id_12" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="롱드링크" id="tag_id_12" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_12"># 롱드링크</label>
                         </div></li>
                         <li><div class="tag-btn 13">
-                            <input type="checkbox" name="tag[]" value=13 id="tag_id_13" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="쌉싸름한" id="tag_id_13" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_13"># 쌉싸름한</label>
                         </div></li> 
                         <li><div class="tag-btn 14">
-                            <input type="checkbox" name="tag[]" value=14 id="tag_id_14" onclick="tagcheckedStyle(event)">
+                            <input type="checkbox" name="tag[]" value="쓴맛가득" id="tag_id_14" onclick="tagcheckedStyle(event)">
                             <label for="tag_id_14"># 쓴맛가득</label>
                         </div></li>
                         

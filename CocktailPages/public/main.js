@@ -8,6 +8,44 @@
 // });
 // $(".circle1").click(function() {$(".circle1").toggleClass("bg-color"); 
 // $(".circle1>img").toggleClass("main-filter");});
+function allcheckedStyle(e) {
+    if(e.target.checked){
+        e.target.parentElement.style.backgroundColor = '#ffdad0';
+        e.target.nextElementSibling.style.color = '#f3553c';
+    }else{
+         e.target.parentElement.style.backgroundColor = 'white';
+         e.target.nextElementSibling.style.color = 'black';
+
+    }
+ }
+function BasemodifiedbyallStyle(e) {
+	var inputs = document.querySelectorAll(".base_list");
+	for (let i = 0; i < inputs.length; i++) {
+		e = inputs[i];
+	    if(e.checked){
+	        e.previousElementSibling.style.backgroundColor = '#ffdad0';
+	        e.previousElementSibling.firstElementChild.style.filter = "invert(48%) sepia(37%) saturate(6061%) hue-rotate(339deg) brightness(100%) contrast(92%)";
+	    }else{
+	         e.previousElementSibling.style.backgroundColor = 'white';
+	         e.previousElementSibling.firstElementChild.style.filter = "invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%) contrast(87%)";
+	    }
+	}
+} 
+
+function FlavormodifiedbyallStyle(e) {
+	var inputs = document.querySelectorAll(".flavor_list");
+	for (let i = 0; i < inputs.length; i++) {
+		e = inputs[i];
+	    if(e.checked){
+	        e.previousElementSibling.style.backgroundColor = '#ffdad0';
+	        e.previousElementSibling.firstElementChild.style.filter = "invert(48%) sepia(37%) saturate(6061%) hue-rotate(339deg) brightness(100%) contrast(92%)";
+	    }else{
+	         e.previousElementSibling.style.backgroundColor = 'white';
+	         e.previousElementSibling.firstElementChild.style.filter = "invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%) contrast(87%)";
+	    }
+	}
+} 
+
 function tagcheckedStyle(e) {
     if(e.target.checked){
         e.target.parentElement.style.backgroundColor = '#ffdad0';
@@ -18,13 +56,30 @@ function tagcheckedStyle(e) {
 
     }
  }
-function checkedStyle(e) {
+function BasecheckedStyle(e) {
     if(e.target.checked){
         e.target.previousElementSibling.style.backgroundColor = '#ffdad0';
         e.target.previousElementSibling.firstElementChild.style.filter = "invert(48%) sepia(37%) saturate(6061%) hue-rotate(339deg) brightness(100%) contrast(92%)";
     }else{
-         e.target.previousElementSibling.style.backgroundColor = 'white';
-         e.target.previousElementSibling.firstElementChild.style.filter = "invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%) contrast(87%)";
+    	var all = document.querySelector("#base_id_0");
+    	all.parentElement.style.backgroundColor = 'white';
+        all.nextElementSibling.style.color = 'black';
+         
+        e.target.previousElementSibling.style.backgroundColor = 'white';
+        e.target.previousElementSibling.firstElementChild.style.filter = "invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%) contrast(87%)";
+    }
+}
+function FlavorcheckedStyle(e) {
+    if(e.target.checked){
+        e.target.previousElementSibling.style.backgroundColor = '#ffdad0';
+        e.target.previousElementSibling.firstElementChild.style.filter = "invert(48%) sepia(37%) saturate(6061%) hue-rotate(339deg) brightness(100%) contrast(92%)";
+    }else{
+    	var all = document.querySelector("#flavor_id_0");
+    	all.parentElement.style.backgroundColor = 'white';
+        all.nextElementSibling.style.color = 'black';
+         
+        e.target.previousElementSibling.style.backgroundColor = 'white';
+        e.target.previousElementSibling.firstElementChild.style.filter = "invert(73%) sepia(8%) saturate(12%) hue-rotate(326deg) brightness(97%) contrast(87%)";
     }
 }
 function allCheck(e) { // 전체 체크 버튼 클릭시 전체 체크 및 해제 *베이스
